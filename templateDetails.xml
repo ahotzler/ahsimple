@@ -7,10 +7,10 @@
 	<authorEmail>ahsimpletemplate@nspw.andrehotzler.de</authorEmail>
 	<authorUrl>http://www.andrehotzler.de</authorUrl>
 	<copyright>Copyright Andre Hotzler</copyright>
-	<version>2.1</version>
-	<description>TPL_AHSIMPLE_XML_DESCRIPTION</description>
+	<version>2.3</version>
+	<description>AHSImple Template</description>
 	<updateservers>
-		<server type="extension" priority="2" name="TPL_AHSIMPLE_XML_UPDATE_NAME">https://downloads.andrehotzler.de/ahsimple/ahsimple.xml</server>
+		<server type="extension" priority="2" name="TPL_AHSIMPLE_XML_UPDATE_NAME">https://downloads.andrehotzler.de/.ahsimple/ahsimple.xml</server>
 	</updateservers>
 	<files>
 		<folder>html</folder>
