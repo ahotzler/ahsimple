@@ -1,0 +1,27 @@
+@media only screen and (max-width:1000px) {
+    .item-page {
+        img {
+            &.right, &.left {
+                width: 100%;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        }
+    }
+    .item-page, .blog-item {
+        figure {
+            &.right, &.left {
+                width: 100%;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        }
+          img {
+            &.right, &.left {
+                width: 100%;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+          }
+        }      
+}

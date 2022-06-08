@@ -1,0 +1,247 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  min-width: 420px;
+}
+img.headerimage { 
+    max-width: 100%;
+}
+.clearfix {
+  clear: both; 
+}
+#maincontainer { 
+  box-shadow: 2px 2px 8px 3px rgb(0, 0, 0, 0.2);
+}
+.blog-item {
+  margin-bottom: 3em;
+}
+.item-page, .blog-item {
+  figure {
+    &.left {
+      width: 40%;
+      float: left;
+      margin-right: 2rem;
+  }
+    &.right {
+      width: 40%;
+      float: right;
+      margin-left: 2rem;
+    }
+  }
+    img {
+        max-width: 100%;
+        margin-bottom: 1rem;
+        &.left {
+            width: 40%;
+            float: left;
+            margin-right: 2rem;
+        }
+        &.right {
+          width: 40%;
+          float: right;
+          margin-left: 2rem;
+        }
+        &.inline {
+          display: inline;
+        }
+        &.full {
+          min-width: 100%;
+          width: 100%;
+        }
+    }
+  }   
+.field-media-wrapper .field-media-preview {
+    width: 100%;
+    max-width: none;
+}
+.editor-xtd-buttons .btn {
+    margin-bottom: 5px;
+  }
+  
+  .subhead {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    width: auto;
+    min-height: 43px;
+    padding: 10px 0;
+    color: #495057;
+    background: white;
+    box-shadow: -3px -2px 22px #ddd;
+  }
+  .subhead .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .subhead.noshadow {
+    box-shadow: none;
+  }
+  .subhead joomla-toolbar-button,
+  .subhead .btn-group {
+    -webkit-margin-start: 0.75rem;
+            margin-inline-start: 0.75rem;
+  }
+  .subhead joomla-toolbar-button:first-child,
+  .subhead .btn-group:first-child {
+    -webkit-margin-start: 0;
+            margin-inline-start: 0;
+  }
+  .subhead joomla-toolbar-button .btn > span,
+  .subhead joomla-toolbar-button .dropdown-item > span {
+    -webkit-margin-end: 0.5rem;
+            margin-inline-end: 0.5rem;
+    width: 1.25em;
+    text-align: center;
+  }
+  .subhead .btn {
+    --subhead-btn-accent: #495057;
+    padding: 0 1rem;
+    margin: 5px 0;
+    font-size: 1rem;
+    line-height: 2.45rem;
+    color: #495057;
+    background: white;
+    border-color: #adb5bd;
+  }
+  .subhead .btn > span {
+    display: inline-block;
+    color: var(--subhead-btn-accent);
+  }
+  .subhead .btn:not([disabled]):hover, .subhead .btn:not([disabled]):active, .subhead .btn:not([disabled]):focus {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: var(--subhead-btn-accent);
+    border-color: var(--subhead-btn-accent);
+  }
+  .subhead .btn:not([disabled]):hover > span, .subhead .btn:not([disabled]):active > span, .subhead .btn:not([disabled]):focus > span {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .subhead .btn.btn-success {
+    --subhead-btn-accent: var(--success);
+  }
+  .subhead .btn.btn-danger {
+    --subhead-btn-accent: var(--danger);
+  }
+  .subhead .btn.btn-primary {
+    --subhead-btn-accent: #2a69b8;
+  }
+  .subhead .btn.btn-secondary {
+    --subhead-btn-accent: #001b4c;
+  }
+  .subhead .btn.btn-info {
+    --subhead-btn-accent: #132f53;
+  }
+  .subhead .btn.btn-action {
+    --subhead-btn-accent: #132f53;
+    display: flex;
+    align-items: center;
+  }
+  .subhead .btn.btn-action::after {
+    width: 2.375rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f078";
+    border: 0;
+  }
+  .subhead .btn[disabled], .subhead .btn.dropdown-toggle[disabled] {
+    --subhead-btn-accent: #132f53;
+    background: rgba(223, 227, 231, 0.8);
+    opacity: 0.5;
+  }
+  .subhead .btn[disabled]:hover, .subhead .btn[disabled]:active, .subhead .btn[disabled]:focus, .subhead .btn.dropdown-toggle[disabled]:hover, .subhead .btn.dropdown-toggle[disabled]:active, .subhead .btn.dropdown-toggle[disabled]:focus {
+    cursor: not-allowed;
+  }
+  .subhead .dropdown-toggle.btn {
+    -webkit-padding-end: 0;
+            padding-inline-end: 0;
+  }
+  .subhead .btn-group:not(:last-child) > .dropdown-toggle-split {
+    order: 1;
+    -webkit-margin-start: -0.25rem;
+            margin-inline-start: -0.25rem;
+  }
+  [dir=ltr] .subhead .btn-group:not(:last-child) > .dropdown-toggle-split {
+    border-radius: 0 0.25rem 0.25rem 0;
+  }
+  [dir=rtl] .subhead .btn-group:not(:last-child) > .dropdown-toggle-split {
+    border-radius: 0.25rem 0 0 0.25rem;
+  }
+  .subhead .dropdown-menu joomla-toolbar-button,
+  .subhead .btn-group joomla-toolbar-button {
+    -webkit-margin-start: 0;
+            margin-inline-start: 0;
+  }
+  
+  @media (max-width: 767.98px) {
+    joomla-tab[view=accordion] .col-md-9,
+  joomla-tab[view=accordion] .col-md-3 {
+      padding: 0.5rem 1rem !important;
+    }
+  
+    #myTab {
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    joomla-tab[view=accordion] ul li {
+      width: 100%;
+    }
+  
+    .subhead joomla-toolbar-button,
+  .subhead .btn-group,
+  .subhead .btn {
+      width: 100%;
+      margin-left: 0;
+      text-align: left;
+    }
+    .subhead .btn-toolbar > .btn-group,
+  .subhead .btn-toolbar > joomla-toolbar-button {
+      margin-left: 0;
+    }
+    .subhead .btn.btn-action::after {
+      text-align: center;
+      -webkit-margin-start: auto;
+              margin-inline-start: auto;
+    }
+    .subhead .dropdown-toggle-split {
+      width: auto;
+    }
+  }
+
+.visually-hidden {
+  display: none;
+}
+li.divider {
+  height: 15px;
+  span.separator {
+    visibility: hidden;
+  }
+}
+ul.navbar-nav {
+  li.nav-item {
+    margin: 0px 0px 5px 0px;
+    &:not(.active) {
+      a {
+        color: #625f5f;
+      }
+
+    }
+  }
+}
+.mod-menu__sub {
+  margin: 10px 20px 0px 10px;
+
+}
+ol.breadcrumb {
+  margin: 25px 0px 0px 0px;
+  padding: 0px !important;
+  font-size: 0.9em;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  content: "-";
+}
+.content {
+  margin-bottom: 2em; 
+}

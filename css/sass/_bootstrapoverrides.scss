@@ -1,0 +1,23 @@
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 900px;
+    }
+}
+.navbar-light .custom-toggler {
+    &:focus {
+        box-shadow: none;;
+    }
+    border: none;
+    color: #625f5f;
+    .navbar-toggler-icon {
+        .ttext {
+            padding-left: 38px;
+            line-height: 31px;
+            height: 31px;
+            font-size: 22px;
+        }
+    }
+
+
+}

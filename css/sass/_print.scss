@@ -1,0 +1,14 @@
+.printonly {
+    display: none;
+}
+@media print {
+    .printonly {
+        display: inherit;
+    }
+    .noprint {
+        display: none;
+    }
+    #maincontainer {
+        box-shadow: none;
+    }
+}

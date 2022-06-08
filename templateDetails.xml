@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 3.1//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="4.0" type="template" client="site">
+	<name>AHSimple</name>
+	<creationDate>08.06.2022</creationDate>
+	<author>Andre Hotzler</author>
+	<authorEmail>ahsimpletemplate@nspw.andrehotzler.de</authorEmail>
+	<authorUrl>http://www.andrehotzler.de</authorUrl>
+	<copyright>Copyright Andre Hotzler</copyright>
+	<version>2</version>
+	<description>TPL_AHSIMPLE_XML_DESCRIPTION</description>
+	<updateservers>
+		<server type="extension" priority="2" name="TPL_AHSIMPLE_XML_UPDATE_NAME">https://downloads.andrehotzler.de/ahsimple/ahsimple.xml</server>
+	</updateservers>
+	<files>
+		<folder>html</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+		<filename>index.php</filename>
+		<filename>parameters.php</filename>
+		<filename>error.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>index.html</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/tpl_ahsimple.ini</language>
+		<language tag="en-GB">en-GB/tpl_ahsimple.sys.ini</language>
+		<language tag="de-DE">de-DE/tpl_ahsimple.ini</language>
+		<language tag="de-DE">de-DE/tpl_ahsimple.sys.ini</language>
+	</languages>
+	<positions>
+		<position>menu</position>
+		<position>header</position>
+		<position>footer</position>
+		<position>pathway</position>
+	</positions>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="templatewidth" type="text" default="800px" label="TPL_AHSIMPLE_CONFIG_LABEL_TEMPLATEWIDTH" />	
+				<field name="headertype" type="list" default="sitename" label="TPL_AHSIMPLE_CONFIG_LABEL_HEADERTYPE">
+					<option value="headerimage">TPL_AHSIMPLE_CONFIG_OPTION_HEADERIMAGE</option>
+					<option value="sitename">TPL_AHSIMPLE_CONFIG_OPTION_SITENAME</option>
+					<option value="owntext">TPL_AHSIMPLE_CONFIG_OPTION_OWNTEXT</option>
+					<option value="nothing">TPL_AHSIMPLE_CONFIG_OPTION_NOTHING</option>
+				</field>
+				<field name="headerownext" type="text" default="My Own Site" label="TPL_AHSIMPLE_CONFIG_LABEL_OWNHEADERTEXT" showon="headertype:owntext" />
+				<field name="headeralignment" type="list" default="sitename" label="TPL_AHSIMPLE_CONFIG_LABEL_HEADERALIGNMEN">
+					<option value="left">TPL_AHSIMPLE_CONFIG_OPTION_LEFT</option>
+					<option value="center">TPL_AHSIMPLE_CONFIG_OPTION_CENTERED</option>
+					<option value="right">TPL_AHSIMPLE_CONFIG_OPTION_RIGHT</option>
+				</field>
+				<field name="headerimage" type="media" default="./images/headers/blue-flower.jpg" label="TPL_AHSIMPLE_CONFIG_LABEL_HEADERIMAGELONGTEXT" showon="headertype:headerimage" />				
+				<field name="sitebackgroundtype" type="list" default="image" label="TPL_AHSIMPLE_CONFIG_LABEL_SITEBACKGROUNDTYPE">
+					<option value="image">TPL_AHSIMPLE_CONFIG_LABEL_BACKGROUNDIMAGE</option>
+					<option value="color">TPL_AHSIMPLE_CONFIG_LABEL_BACKGROUNDCOLOR</option>
+				</field>		
+				<field name="sitebackgroundcolor" type="color" default="#eeeeee" label="TPL_AHSIMPLE_CONFIG_LABEL_BACKGROUNDCOLORLONGTEXT" showon="sitebackgroundtype:color" />
+				<field name="sitebackgroundimage" type="media" default="./images/headers/blue-flower.jpg" label="TPL_AHSIMPLE_CONFIG_LABEL_BACKGROUNDIMAGE" showon="sitebackgroundtype:image" />
+				<field name="textcolor" type="color" default="#625f5f" label="TPL_AHSIMPLE_CONFIG_LABEL_TEXTCOLOR" />
+				<field name="contrastcolor" type="color" default="#415a7d" label="TPL_AHSIMPLE_CONFIG_LABEL_CONTRASTCOLOR" />
+				<field name="innerbackgroundcolor" type="color" default="#ffffff" label="TPL_AHSIMPLE_CONFIG_LABEL_INNERBGCOLOR" />
+				<field name="innerbackgroundroundedborders" type="list" default="5px" label="TPL_AHSIMPLE_CONFIG_LABEL_ROUNDEDBORDERS">
+					<option value="0px">0px</option>
+					<option value="3px">3px</option>
+					<option value="5px">5px</option>
+					<option value="10px">10px</option>
+					<option value="20px">20px</option>
+				</field>
+				<field name="innerbackgroundopacity" type="list" default="0.95" label="TPL_AHSIMPLE_CONFIG_LABEL_BGOPACITY" showon="sitebackgroundtype:image">
+					<option value="1">1</option>
+					<option value="0.95">0.95</option>
+					<option value="0.9">0.9</option>
+					<option value="0.85">0.85</option>
+					<option value="0.8">0.8</option>
+					<option value="0.75">0.75</option>
+					<option value="0.7">0.7</option>
+				</field>
+				<field name="fontsize" type="text" default="20px" label="TPL_AHSIMPLE_CONFIG_LABEL_FONTSIZE" />
+				<field name="h1size" type="text" default="32px" label="TPL_AHSIMPLE_CONFIG_LABEL_H1SIZE" />
+				<field name="h2size" type="text" default="30px" label="TPL_AHSIMPLE_CONFIG_LABEL_H2SIZE" />
+				<field name="h3size" type="text" default="26px" label="TPL_AHSIMPLE_CONFIG_LABEL_H3SIZE" />
+									
+			</fieldset>
+		</fields>
+	</config>
+</extension>

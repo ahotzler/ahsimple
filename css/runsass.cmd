@@ -1,0 +1,2 @@
+start sass --watch .\sass\editor.scss:.\editor.min.css --watch .\sass\template.scss:.\template.min.css --style compressed 
+start sass --watch .\sass\editor.scss:.\editor.css --watch .\sass\template.scss:.\template.css

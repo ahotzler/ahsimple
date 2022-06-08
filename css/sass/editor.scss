@@ -1,0 +1,42 @@
+﻿/*otto-goetz_v1Template*/
+/*Andre Hotzler EDV_Dienstleistungen http://www.andrehotzler.de*/
+/*Copyright CSS Code 2019 Andre Hotzler*/
+@import "_variables"; 
+@import "_content_styles";
+hr#system-readmore {
+	border: red dashed 1px;
+	color: red;
+}
+hr.system-pagebreak {
+	border: gray dashed 1px;
+	color: gray;
+}
+
+body#tinymce, body.contentpane {
+}
+body#tinymce strong, body.contentpane strong {
+    font-weight: bold;
+}
+body#tinymce  {
+    img {
+        max-width: 100%;
+        margin-bottom: 1rem;
+        &.left {
+            width: 40%;
+            float: left;
+            margin-right: 1rem;
+        }
+        &.right {
+          width: 40%;
+          float: right;
+          margin-left: 1rem;
+        }
+        &.inline {
+          display: inline;
+        }
+        &.full {
+          min-width: 100%;
+          width: 100%;
+        }
+    }
+}

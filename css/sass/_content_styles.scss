@@ -1,0 +1,50 @@
+﻿body {
+	font-family: $fontfamily;
+	color: $textcolor1;
+	font-size: 20px;
+	line-height: 1.5em;
+}
+strong {
+	font-weight: normal;
+	font-family: $fontfamilysemibold;
+}
+h1, h2 ,h3, h4 ,h5 ,h6 {
+	font-family: $fontfamily;
+	color: $color1;
+	font-weight: normal;
+	line-height: 1.3em;
+}
+h1, h2 ,h3, h4 ,h5 ,h6,p {
+	margin-top: 0px;
+}
+h1, h2 {
+	font-size: 32px;
+	margin-top: 1.0em;
+	margin-bottom: 1.0em;
+}
+h3 {
+	font-size: 26px;
+}
+h4 {
+	font-size: 22px;
+}
+a {
+	img {
+		border: none;
+	}
+	color: $color1;
+	text-decoration: none;
+}
+a:hover {
+	color: $color1;
+	cursor: pointer;
+	text-decoration: underline;
+	outline: none;
+}
+.farbigauszeichnen1 {
+    color: $color1;
+}
+
+.kleineschrift {
+	font-size: 12px;
+}
