@@ -7931,25 +7931,26 @@ ol.breadcrumb {
   margin-bottom: 2em;
 }
 
-.moduletable.atthetopmenu {
-  background-color: white;
+#atthetop {
+  margin: auto;
+}
+#atthetop .moduletable.atthetopmenu {
+  padding-top: 0.7em;
   text-align: center;
   margin-bottom: 2em;
 }
-.moduletable.atthetopmenu h3 {
-  margin-bottom: 0px;
-}
-.moduletable.atthetopmenu ul {
-  text-align: center;
+#atthetop .moduletable.atthetopmenu ul {
   margin: auto;
-  padding: 0px;
+  padding: 0px 0px 0.7em 0px;
   display: flex;
-  width: 70%;
 }
-.moduletable.atthetopmenu ul li {
+#atthetop .moduletable.atthetopmenu ul li {
   list-style: none;
   text-align: center;
   flex: 1;
+}
+#atthetop .moduletable.atthetopmenu ul li.active {
+  text-decoration: underline;
 }
 
 @media (min-width: 992px) {
@@ -7972,10 +7973,6 @@ ol.breadcrumb {
 }
 
 @media only screen and (max-width: 1000px) {
-  .moduletable.atthetopmenu ul {
-    width: auto;
-  }
-
   .item-page img.right, .item-page img.left {
     width: 100%;
     margin-left: 0px;

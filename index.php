@@ -92,6 +92,11 @@ include('parameters.php');
 			color: <?php echo $textcolor ?>;
 		  <?php echo $sitebodybackgroundcsscode ?>;
 		}
+		body:after {
+			display: none;
+			<?php echo $sitebodybackgroundaftercsscode ?>;
+		}
+
 		html {
 			<?php echo $sitehtmlbackgroundcsscode ?>;
 		}
@@ -113,10 +118,19 @@ include('parameters.php');
 			max-width: <?php echo $templatewidth ?>;
 			border-radius: <?php echo $innerbackgroundroundedborders  ?>;
 		}
+		#atthetop {
+			background-color: <?php echo $innerbackgroundcolor ?>;
+			opacity: <?php echo $innerbackgroundopacity ?>;
+			max-width: <?php echo $templatewidth ?>;
+			border-bottom-left-radius: <?php echo $innerbackgroundroundedborders  ?>;
+			border-bottom-right-radius: <?php echo $innerbackgroundroundedborders  ?>;
+		}
 	</style>
 </head>
 <body class="site <?php echo $option 	. ' ' . $wrapper . ' view-' . $view . ($layout ? ' layout-' . $layout : ' no-layout') . ($task ? ' task-' . $task : ' no-task') . ($itemid ? ' itemid-' . $itemid : '') . ($pageclass ? ' ' . $pageclass : '') . $hasClass . ($this->direction == 'rtl' ? ' rtl' : ''); ?>">
-<jdoc:include type="modules" name="atthetop" style="html5" />		
+<div id="atthetop">
+	<jdoc:include type="modules" name="atthetop" style="html5" />		
+</div>
 <div id="maincontainer" class="container shadow-sm p-4 p-sm-4 p-md-4 p-lg-5 mb-0 mt-0 mb-sm-2 mt-sm-2 mb-md-3 mt-md-3 mb-lg-4 mt-lg-4">
   <div class="header mb-4" role="heading">
 		<jdoc:include type="modules" name="header" style="raw" />			

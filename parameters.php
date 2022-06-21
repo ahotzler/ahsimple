@@ -39,6 +39,7 @@ $innerbackgroundopacity = ($this->params->get('innerbackgroundopacity', '1'));
 
 if ($sitebackgroundtype == 'image') {
 		$sitebodybackgroundcsscode = 'background-color: transparent;';
+		$sitebodybackgroundaftercsscode = 'content: url("'. Uri::root(true) . '/' . htmlspecialchars($this->params->get('sitebackgroundimage'), ENT_QUOTES) .'");';
 		$sitehtmlbackgroundcsscode = 'background: url("' . Uri::root(true) . '/' . htmlspecialchars($this->params->get('sitebackgroundimage'), ENT_QUOTES) . '") no-repeat top center fixed; background-size: cover;';
 	  } elseif ($sitebackgroundtype ==  'color') {
 		$sitebodybackgroundcsscode = 'background-color:'.$sitebackgroundcolor.';';
