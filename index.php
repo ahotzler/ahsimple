@@ -116,6 +116,7 @@ include('parameters.php');
 	</style>
 </head>
 <body class="site <?php echo $option 	. ' ' . $wrapper . ' view-' . $view . ($layout ? ' layout-' . $layout : ' no-layout') . ($task ? ' task-' . $task : ' no-task') . ($itemid ? ' itemid-' . $itemid : '') . ($pageclass ? ' ' . $pageclass : '') . $hasClass . ($this->direction == 'rtl' ? ' rtl' : ''); ?>">
+<jdoc:include type="modules" name="atthetop" style="html5" />		
 <div id="maincontainer" class="container shadow-sm p-4 p-sm-4 p-md-4 p-lg-5 mb-0 mt-0 mb-sm-2 mt-sm-2 mb-md-3 mt-md-3 mb-lg-4 mt-lg-4">
   <div class="header mb-4" role="heading">
 		<jdoc:include type="modules" name="header" style="raw" />			

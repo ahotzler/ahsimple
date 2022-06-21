@@ -1,5 +1,8 @@
 @media only screen and (max-width:1000px) {
-    .item-page {
+    .moduletable.atthetopmenu {
+        width: autom
+    }
+    .item-page { 
         img {
             &.right, &.left {
                 width: 100%;
