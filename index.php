@@ -2,7 +2,7 @@
 defined('_JEXEC') or die('Restricted access'); 
 /**
 * ahsimple Joomla! Template
-* @copyright   (C) 2021 Andre Hotzler https://www.andrehotzler.de/
+* @copyright   (C) 2022 Andre Hotzler https://www.andrehotzler.de/
 * @license     GNU General Public License version 2 or later; see LICENSE.txt
 **/
 
@@ -125,6 +125,7 @@ include('parameters.php');
 			border-bottom-left-radius: <?php echo $innerbackgroundroundedborders  ?>;
 			border-bottom-right-radius: <?php echo $innerbackgroundroundedborders  ?>;
 		}
+		<?php echo $customcsscode ?>
 	</style>
 </head>
 <body class="site <?php echo $option 	. ' ' . $wrapper . ' view-' . $view . ($layout ? ' layout-' . $layout : ' no-layout') . ($task ? ' task-' . $task : ' no-task') . ($itemid ? ' itemid-' . $itemid : '') . ($pageclass ? ' ' . $pageclass : '') . $hasClass . ($this->direction == 'rtl' ? ' rtl' : ''); ?>">

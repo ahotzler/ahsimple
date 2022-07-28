@@ -46,3 +46,4 @@ if ($sitebackgroundtype == 'image') {
 		$innerbackgroundopacity = "1";
 	} 	
 $innerbackgroundroundedborders = ($this->params->get('innerbackgroundroundedborders', '5px'));	
+$customcsscode = ($this->params->get('customcsscode', ''));	
