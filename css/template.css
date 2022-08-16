@@ -7673,11 +7673,26 @@ img.headerimage {
 #maincontainer {
   box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, 0.2);
 }
+#maincontainer ul.mod-menu {
+  margin: 20px 0px 10px 0px;
+  padding: 10px 0px;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
 
 .blog-item {
   margin-bottom: 3em;
 }
 
+.item-page figure.full img, .blog-item figure.full img {
+  width: 100%;
+}
 .item-page figure.left, .blog-item figure.left {
   width: 40%;
   float: left;
@@ -7913,7 +7928,7 @@ ul.navbar-nav li.nav-item:not(.active) a {
   color: #625f5f;
 }
 
-.mod-menu__sub {
+nav.mod-menu__sub {
   margin: 10px 20px 0px 10px;
 }
 
@@ -7953,6 +7968,22 @@ ol.breadcrumb {
   text-decoration: underline;
 }
 
+.modal-backdrop {
+  display: none;
+}
+
+.jviewport-height60 {
+  height: 80vh;
+}
+
+.file-background, .folder-background, .image-background {
+  background-color: #eee;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
 @media (min-width: 992px) {
   .container {
     max-width: 900px;
@@ -7973,13 +8004,25 @@ ol.breadcrumb {
 }
 
 @media only screen and (max-width: 1000px) {
+  #maincontainer {
+    border-radius: 0px !important;
+  }
+  #maincontainer ul.mod-menu {
+    display: inherit;
+  }
+
   .item-page img.right, .item-page img.left {
     width: 100%;
     margin-left: 0px;
     margin-right: 0px;
   }
 
-  .item-page figure.right, .item-page figure.left, .blog-item figure.right, .blog-item figure.left {
+  .item-page figure.right, .item-page figure.left, .item-page figure.full, .blog-item figure.right, .blog-item figure.left, .blog-item figure.full {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .item-page figure.right img, .item-page figure.left img, .item-page figure.full img, .blog-item figure.right img, .blog-item figure.left img, .blog-item figure.full img {
     width: 100%;
     margin-left: 0px;
     margin-right: 0px;

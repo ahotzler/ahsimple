@@ -87,6 +87,15 @@ include('parameters.php');
 		.w1 {
 			width: <?php echo $templatewidth ?>;
 		}
+		#maincontainer ul.mod-menu {
+			border-color: 	<?php echo $contrastcolor ?>;
+		}
+		#maincontainer ul.mod-menu li a {
+			color: <?php echo $textcolor ?> 
+		}
+		#maincontainer ul.mod-menu li.active a {
+			color: <?php echo $contrastcolor ?> 
+		}
 		body {
 			font-size: <?php echo $fontsize ?>;
 			color: <?php echo $textcolor ?>;

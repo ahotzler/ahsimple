@@ -1,5 +1,5 @@
 html {
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 body {
   min-width: 420px;
@@ -12,12 +12,29 @@ img.headerimage {
 }
 #maincontainer { 
   box-shadow: 2px 2px 8px 3px rgb(0, 0, 0, 0.2);
+  ul.mod-menu {
+    margin: 20px 0px 10px 0px;
+    padding: 10px 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
 }
 .blog-item {
   margin-bottom: 3em;
 }
 .item-page, .blog-item {
   figure {
+    &.full {
+      img {
+        width: 100%;
+      }
+    }
     &.left {
       width: 40%;
       float: left;
@@ -230,7 +247,7 @@ ul.navbar-nav {
     }
   }
 }
-.mod-menu__sub {
+nav.mod-menu__sub {
   margin: 10px 20px 0px 10px;
 
 }
@@ -265,4 +282,17 @@ ol.breadcrumb {
       }
     }
   }
+}
+.modal-backdrop {
+  display: none;
+}
+.jviewport-height60 {
+  height: 80vh;
+}
+.file-background, .folder-background, .image-background {
+  background-color: #eee;
+
+}
+.hidden {
+  visibility: hidden;
 }

@@ -1,4 +1,7 @@
 @media only screen and (max-width:1000px) {
+    #maincontainer {
+        border-radius: 0px !important;
+    }
     .item-page { 
         img {
             &.right, &.left {
@@ -10,10 +13,15 @@
     }
     .item-page, .blog-item {
         figure {
-            &.right, &.left {
+            &.right, &.left, &.full { 
                 width: 100%;
                 margin-left: 0px;
                 margin-right: 0px;
+                img {
+                    width: 100%;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
             }
         }
           img {
@@ -24,4 +32,4 @@
             }
           }
         }      
-}
+    }
