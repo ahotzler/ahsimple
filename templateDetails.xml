@@ -2,12 +2,12 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 3.1//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="4.0" type="template" client="site">
 	<name>ahsimple</name>
-	<creationDate>03.08.2022</creationDate>
+	<creationDate>30.09.2022</creationDate>
 	<author>Andre Hotzler</author>
 	<authorEmail>ahsimpletemplate@nspw.andrehotzler.de</authorEmail>
 	<authorUrl>http://www.andrehotzler.de</authorUrl>
 	<copyright>Copyright Andre Hotzler</copyright>
-	<version>2.95</version>
+	<version>2.99</version>
 	<description>AHSimple Template</description>
 	<updateservers>
 		<server type="extension" priority="2" name="TPL_AHSIMPLE_XML_UPDATE_NAME">https://downloads.andrehotzler.de/.ahsimple/ahsimple.xml</server>
@@ -64,6 +64,8 @@
 				<field name="textcolor" type="color" default="#625f5f" label="TPL_AHSIMPLE_CONFIG_LABEL_TEXTCOLOR" />
 				<field name="contrastcolor" type="color" default="#415a7d" label="TPL_AHSIMPLE_CONFIG_LABEL_CONTRASTCOLOR" />
 				<field name="innerbackgroundcolor" type="color" default="#ffffff" label="TPL_AHSIMPLE_CONFIG_LABEL_INNERBGCOLOR" />
+				<field name="innerpaddingdesktop" type="text" default="48px" label="TPL_AHSIMPLE_CONFIG_LABEL_INNERPADDINGDESKTOP" />
+				<field name="innerpaddingmobile" type="text" default="24px" label="TPL_AHSIMPLE_CONFIG_LABEL_INNERPADDINGMOBILE" />
 				<field name="innerbackgroundroundedborders" type="list" default="5px" label="TPL_AHSIMPLE_CONFIG_LABEL_ROUNDEDBORDERS">
 					<option value="0px">0px</option>
 					<option value="3px">3px</option>

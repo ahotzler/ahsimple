@@ -7923,6 +7923,15 @@ li.divider span.separator {
 
 ul.navbar-nav li.nav-item {
   margin: 0px 0px 5px 0px;
+  min-height: 35px;
+}
+ul.navbar-nav li.nav-item .mod-menu__sub {
+  margin: 10px 0px 10px 15px;
+}
+ul.navbar-nav li.nav-item.divider {
+  height: 15px;
+  min-height: 15px;
+  max-height: 15px;
 }
 ul.navbar-nav li.nav-item:not(.active) a {
   color: #625f5f;
@@ -7984,6 +7993,10 @@ ol.breadcrumb {
   visibility: hidden;
 }
 
+.footer .mod-custom p:last-of-type {
+  margin-bottom: 0px;
+}
+
 @media (min-width: 992px) {
   .container {
     max-width: 900px;
@@ -8003,12 +8016,9 @@ ol.breadcrumb {
   font-size: 22px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
   #maincontainer {
     border-radius: 0px !important;
-  }
-  #maincontainer ul.mod-menu {
-    display: inherit;
   }
 
   .item-page img.right, .item-page img.left {

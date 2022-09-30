@@ -238,7 +238,16 @@ li.divider {
 }
 ul.navbar-nav {
   li.nav-item {
+    .mod-menu__sub {
+      margin: 10px 0px 10px 15px;
+    }
+    &.divider {
+      height: 15px;
+      min-height: 15px;
+      max-height: 15px;
+    }
     margin: 0px 0px 5px 0px;
+    min-height: 35px;
     &:not(.active) {
       a {
         color: #625f5f;
@@ -295,4 +304,11 @@ ol.breadcrumb {
 }
 .hidden {
   visibility: hidden;
+}
+.footer {
+  .mod-custom {
+    p:last-of-type {
+      margin-bottom: 0px;
+    }
+  }
 }

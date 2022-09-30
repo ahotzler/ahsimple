@@ -126,6 +126,12 @@ include('parameters.php');
 			opacity: <?php echo $innerbackgroundopacity ?>;
 			max-width: <?php echo $templatewidth ?>;
 			border-radius: <?php echo $innerbackgroundroundedborders  ?>;
+			padding: <?php echo $innerpaddingmobile ?> 
+		}
+		@media (min-width: 992px) {
+			#maincontainer {
+				padding: <?php echo $innerpaddingdesktop ?> 
+			}
 		}
 		#atthetop {
 			background-color: <?php echo $innerbackgroundcolor ?>;
@@ -141,7 +147,7 @@ include('parameters.php');
 <div id="atthetop">
 	<jdoc:include type="modules" name="atthetop" style="html5" />		
 </div>
-<div id="maincontainer" class="container shadow-sm p-4 p-sm-4 p-md-4 p-lg-5 mb-0 mt-0 mb-sm-2 mt-sm-2 mb-md-3 mt-md-3 mb-lg-4 mt-lg-4">
+<div id="maincontainer" class="container shadow-sm  mb-0 mt-0 mb-sm-2 mt-sm-2 mb-md-3 mt-md-3 mb-lg-4 mt-lg-4">
   <div class="header mb-4" role="heading">
 		<jdoc:include type="modules" name="header" style="raw" />			
 		<?php echo $headercontent ?>
