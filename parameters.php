@@ -21,16 +21,29 @@ $h2size = ($this->params->get('h2size', '30px'));
 $h3size = ($this->params->get('h3size', '26px'));
 $templatewidth = ($this->params->get('templatewidth', '900px'));
 $headertype = ($this->params->get('headertype', 'sitename'));
+$linkedheader = ($this->params->get('linkedheader', 'no'));
 $headeralignment = ($this->params->get('headeralignment', 'sitename'));
 
+
 if ($headertype == 'headerimage') {
-		$headercontent = '<img class="headerimage" src="' . Uri::root(true) . '/' . htmlspecialchars($this->params->get('headerimage'), ENT_QUOTES) . '" alt="' . $sitename . '">';
+	if ($linkedheader == 'yes') {
+			$headercontent = '<a href="/" title="Home"><img class="headerimage" src="' . Uri::root(true) . '/' . htmlspecialchars($this->params->get('headerimage'), ENT_QUOTES) . '" alt="' . $sitename . '"></a>';
+		} else {
+			$headercontent = '<img class="headerimage" src="' . Uri::root(true) . '/' . htmlspecialchars($this->params->get('headerimage'), ENT_QUOTES) . '" alt="' . $sitename . '">';
+		}
 	} elseif ($headertype ==  'owntext') {
-		$headercontent = '<h1>' . $headerownext . '</h1>';
+		if ($linkedheader == 'yes') {
+			$headercontent = '<a href="/" title="Home"><h1>' . $headerownext . '</h1></a>';
+		} else {
+			$headercontent = '<h1>' . $headerownext . '</h1>';
+		}
 	} elseif ($headertype ==  'sitename') {
-		$headercontent = '<h1>' . $sitename . '</h1>';
-	} 
-  elseif ($headertype ==  'nothing') {
+		if ($linkedheader == 'yes') {
+			$headercontent = '<a href="/" title="Home"><h1>' . $sitename . '</h1></a>';
+		} else {
+			$headercontent = '<h1>' . $sitename . '</h1>';
+		}
+	}    elseif ($headertype ==  'nothing') {
 		$headercontent = '';
 	} 
 	
