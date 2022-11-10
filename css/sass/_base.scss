@@ -29,8 +29,12 @@ img.headerimage {
   margin-bottom: 3em;
 }
 .item-page, .blog-item {
+  video {
+    width: 100%;
+    height: auto;
+  }
   figure {
-    &.full {
+    &.full, .center {
       img {
         width: 100%;
       }
@@ -62,7 +66,7 @@ img.headerimage {
         &.inline {
           display: inline;
         }
-        &.full {
+        &.full, .center {
           min-width: 100%;
           width: 100%;
         }

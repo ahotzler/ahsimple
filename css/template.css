@@ -7690,7 +7690,11 @@ img.headerimage {
   margin-bottom: 3em;
 }
 
-.item-page figure.full img, .blog-item figure.full img {
+.item-page video, .blog-item video {
+  width: 100%;
+  height: auto;
+}
+.item-page figure.full img, .item-page figure .center img, .blog-item figure.full img, .blog-item figure .center img {
   width: 100%;
 }
 .item-page figure.left, .blog-item figure.left {
@@ -7720,7 +7724,7 @@ img.headerimage {
 .item-page img.inline, .blog-item img.inline {
   display: inline;
 }
-.item-page img.full, .blog-item img.full {
+.item-page img.full, .item-page img .center, .blog-item img.full, .blog-item img .center {
   min-width: 100%;
   width: 100%;
 }
