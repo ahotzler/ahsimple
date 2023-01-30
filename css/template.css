@@ -7951,12 +7951,33 @@ ol.breadcrumb {
   font-size: 0.9em;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 0rem;
+}
+
+.breadcrumb-item {
+  padding-right: 0.5rem;
+  padding-left: 0;
+}
+
+.breadcrumb-item::after {
   content: "-";
+  float: right;
+  padding-left: 0.5rem;
+  color: #6c757d;
+  content: var(--bs-breadcrumb-divider, "/");
+}
+
+.breadcrumb-item + .breadcrumb-item::before, .breadcrumb-item + .breadcrumb-item:last-of-type::after {
+  content: none;
+  float: none;
+  padding-right: inherit;
+  color: inherit;
 }
 
 .content {
   margin-bottom: 2em;
+  overflow-wrap: break-word;
 }
 
 #atthetop {

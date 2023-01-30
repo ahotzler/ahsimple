@@ -2,12 +2,12 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 3.1//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="4.0" type="template" client="site">
 	<name>ahsimple</name>
-	<creationDate>10.11.2022</creationDate>
+	<creationDate>30.01.2023</creationDate>
 	<author>Andre Hotzler</author>
 	<authorEmail>ahsimpletemplate@nspw.andrehotzler.de</authorEmail>
 	<authorUrl>http://www.andrehotzler.de</authorUrl>
 	<copyright>Copyright Andre Hotzler</copyright>
-	<version>3.01</version>
+	<version>3.02</version>
 	<description>AHSimple Template</description>
 	<updateservers>
 		<server type="extension" priority="2" name="TPL_AHSIMPLE_XML_UPDATE_NAME">https://downloads.andrehotzler.de/.ahsimple/ahsimple.xml</server>
@@ -94,6 +94,7 @@
 				<field name="h2size" type="text" default="30px" label="TPL_AHSIMPLE_CONFIG_LABEL_H2SIZE" />
 				<field name="h3size" type="text" default="26px" label="TPL_AHSIMPLE_CONFIG_LABEL_H3SIZE" />
 				<field name="customcsscode" type="editor" editor="codemirror" filter="raw" default="" label="TPL_AHSIMPLE_CONFIG_LABEL_CUSTOMCSSCODE" />
+				<field name="customcodeattheend" type="editor" editor="codemirror" filter="raw" default="" label="TPL_AHSIMPLE_CONFIG_LABEL_CUSTOMCODEATTHEEND" />
 									
 			</fieldset>
 		</fields>

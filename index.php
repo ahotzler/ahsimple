@@ -166,6 +166,7 @@ include('parameters.php');
 		<jdoc:include type="modules" name="footer" style="html5" />	
 	</div>
 </div>
+<?php echo $customcodeattheend ?>
 </body> 
 </html>
 
