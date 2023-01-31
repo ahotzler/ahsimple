@@ -283,7 +283,7 @@ ol.breadcrumb {
   color: #6c757d;
   content: var(--bs-breadcrumb-divider, "/");
 }
-.breadcrumb-item+.breadcrumb-item::before, .breadcrumb-item+.breadcrumb-item:last-of-type::after {
+.breadcrumb-item+.breadcrumb-item::before, .breadcrumb-item+.breadcrumb-item:last-of-type::after, .breadcrumb-item:last-of-type::after {
   content: none;
   float: none;
   padding-right: inherit;
