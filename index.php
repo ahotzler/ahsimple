@@ -51,7 +51,7 @@ include('parameters.php');
 <!DOCTYPE html> 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 <head>
-	<meta name="DC.language" content="<?php echo $this->language; ?>" />
+	<meta name="DC.language" content="<?php echo $this->language; ?>">
 	<meta name="viewport" content="width=device-width">
 	<jdoc:include type="metas" />
 	<jdoc:include type="styles" />
@@ -139,6 +139,21 @@ include('parameters.php');
 			max-width: <?php echo $templatewidth ?>;
 			border-bottom-left-radius: <?php echo $innerbackgroundroundedborders  ?>;
 			border-bottom-right-radius: <?php echo $innerbackgroundroundedborders  ?>;
+		}
+		.item-page img.left, .blog-item img.left, .item-page img.right, .blog-item img.right  {
+			width: <?php echo $alignedcontentimagewidth ?>;
+		}
+		.item-page figure.right, .blog-item figure.right, .item-page figure.left, .blog-item figure.left {
+			width: <?php echo $alignedintroimagewidth ?>;
+		}
+		@media only screen and (max-width: <?php echo $templatewidth ?>) {	
+    	#maincontainer {
+        	border-radius: 0px !important;
+    	}
+    	<?php echo $alignedintroimagefullwidthcode; ?>
+    	
+    	<?php echo $alignedcontimagefullwidthcode ?>
+    	
 		}
 		<?php echo $customcsscode ?>
 	</style>

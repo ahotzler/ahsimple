@@ -7,9 +7,10 @@ body {
 img.headerimage { 
     max-width: 100%;
 }
-.clearfix {
+.clearfix, .clear {
   clear: both; 
 }
+
 #maincontainer { 
   box-shadow: 2px 2px 8px 3px rgb(0, 0, 0, 0.2);
   ul.mod-menu {
@@ -43,11 +44,17 @@ img.headerimage {
       width: 40%;
       float: left;
       margin-right: 2rem;
+      img {
+        width: 100%;
+      }
   }
     &.right {
       width: 40%;
       float: right;
       margin-left: 2rem;
+      img {
+        width: 100%;
+      }
     }
   }
     img {
@@ -75,6 +82,9 @@ img.headerimage {
 .field-media-wrapper .field-media-preview {
     width: 100%;
     max-width: none;
+}
+.category-desc {
+  margin-bottom: 40px;
 }
 .editor-xtd-buttons .btn {
     margin-bottom: 5px;

@@ -7666,7 +7666,7 @@ img.headerimage {
   max-width: 100%;
 }
 
-.clearfix {
+.clearfix, .clear {
   clear: both;
 }
 
@@ -7702,10 +7702,16 @@ img.headerimage {
   float: left;
   margin-right: 2rem;
 }
+.item-page figure.left img, .blog-item figure.left img {
+  width: 100%;
+}
 .item-page figure.right, .blog-item figure.right {
   width: 40%;
   float: right;
   margin-left: 2rem;
+}
+.item-page figure.right img, .blog-item figure.right img {
+  width: 100%;
 }
 .item-page img, .blog-item img {
   max-width: 100%;
@@ -7732,6 +7738,10 @@ img.headerimage {
 .field-media-wrapper .field-media-preview {
   width: 100%;
   max-width: none;
+}
+
+.category-desc {
+  margin-bottom: 40px;
 }
 
 .editor-xtd-buttons .btn {
@@ -8041,33 +8051,6 @@ ol.breadcrumb {
   font-size: 22px;
 }
 
-@media only screen and (max-width: 992px) {
-  #maincontainer {
-    border-radius: 0px !important;
-  }
-
-  .item-page img.right, .item-page img.left {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  .item-page figure.right, .item-page figure.left, .item-page figure.full, .blog-item figure.right, .blog-item figure.left, .blog-item figure.full {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .item-page figure.right img, .item-page figure.left img, .item-page figure.full img, .blog-item figure.right img, .blog-item figure.left img, .blog-item figure.full img {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .item-page img.right, .item-page img.left, .blog-item img.right, .blog-item img.left {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
 .printonly {
   display: none;
 }

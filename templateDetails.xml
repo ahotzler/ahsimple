@@ -2,12 +2,12 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 3.1//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="4.0" type="template" client="site">
 	<name>ahsimple</name>
-	<creationDate>31.01.2023</creationDate>
+	<creationDate>26.02.2023</creationDate>
 	<author>Andre Hotzler</author>
 	<authorEmail>ahsimpletemplate@nspw.andrehotzler.de</authorEmail>
 	<authorUrl>http://www.andrehotzler.de</authorUrl>
 	<copyright>Copyright Andre Hotzler</copyright>
-	<version>3.07</version>
+	<version>3.21</version>
 	<description>AHSimple Template</description>
 	<updateservers>
 		<server type="extension" priority="2" name="TPL_AHSIMPLE_XML_UPDATE_NAME">https://downloads.andrehotzler.de/.ahsimple/ahsimple.xml</server>
@@ -23,7 +23,6 @@
 		<filename>template_thumbnail.png</filename>
 		<filename>index.html</filename>
 		<filename>templateDetails.xml</filename>
-		<filename>favicon.ico</filename>
 	</files>
 	<languages folder="language">
 		<language tag="en-GB">en-GB/tpl_ahsimple.ini</language>
@@ -93,6 +92,17 @@
 				<field name="h1size" type="text" default="32px" label="TPL_AHSIMPLE_CONFIG_LABEL_H1SIZE" />
 				<field name="h2size" type="text" default="30px" label="TPL_AHSIMPLE_CONFIG_LABEL_H2SIZE" />
 				<field name="h3size" type="text" default="26px" label="TPL_AHSIMPLE_CONFIG_LABEL_H3SIZE" />
+				<field name="alignedintroimagewidth" type="text" default="40%" label="TPL_AHSIMPLE_CONFIG_LABEL_ALIGNEDINTROIMAGEWIDTH" />
+				<field name="alignedintroimagefullwidth" type="radio" label="TPL_AHSIMPLE_CONFIG_LABEL_ALIGNEDINTROIMAGEMOBILEFULLWIDTH" layout="joomla.form.field.radio.switcher" default="1" filter="boolean">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="alignedcontentimagewidth" type="text" default="40%" label="TPL_AHSIMPLE_CONFIG_LABEL_ALIGNEDCONTENTIMAGEWIDTH" />
+				<field name="alignedcontimagefullwidth" type="radio" label="TPL_AHSIMPLE_CONFIG_LABEL_ALIGNEDCONTENTIMAGEMOBILEFULLWIDTH" layout="joomla.form.field.radio.switcher" default="0" filter="boolean">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
 				<field name="customcsscode" type="editor" editor="codemirror" filter="raw" default="" label="TPL_AHSIMPLE_CONFIG_LABEL_CUSTOMCSSCODE" />
 				<field name="customcodeattheend" type="editor" editor="codemirror" filter="raw" default="" label="TPL_AHSIMPLE_CONFIG_LABEL_CUSTOMCODEATTHEEND" />
 									

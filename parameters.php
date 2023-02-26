@@ -53,13 +53,33 @@ $sitebackgroundimage = ($this->params->get('sitebackgroundimage', 'sitename'));
 $innerbackgroundopacity = ($this->params->get('innerbackgroundopacity', '1'));	
 
 if ($sitebackgroundtype == 'image') {
-		$sitebodybackgroundcsscode = 'background-color: transparent;';
-		$sitebodybackgroundaftercsscode = 'content: url("'. Uri::root(true) . '/' . htmlspecialchars($this->params->get('sitebackgroundimage'), ENT_QUOTES) .'");';
-		$sitehtmlbackgroundcsscode = 'background: url("' . Uri::root(true) . '/' . htmlspecialchars($this->params->get('sitebackgroundimage'), ENT_QUOTES) . '") no-repeat top center fixed; background-size: cover;';
-	  } elseif ($sitebackgroundtype ==  'color') {
-		$sitebodybackgroundcsscode = 'background-color:'.$sitebackgroundcolor.';';
-		$innerbackgroundopacity = "1";
+	$sitebodybackgroundcsscode = 'background-color: transparent;';
+	$sitebodybackgroundaftercsscode = 'content: url("'. Uri::root(true) . '/' . htmlspecialchars($this->params->get('sitebackgroundimage'), ENT_QUOTES) .'");';
+	$sitehtmlbackgroundcsscode = 'background: url("' . Uri::root(true) . '/' . htmlspecialchars($this->params->get('sitebackgroundimage'), ENT_QUOTES) . '") no-repeat top center fixed; background-size: cover;';
+	 } elseif ($sitebackgroundtype ==  'color') {
+	$sitebodybackgroundcsscode = 'background-color:'.$sitebackgroundcolor.';';
+	$innerbackgroundopacity = "1";
 	} 	
 $innerbackgroundroundedborders = ($this->params->get('innerbackgroundroundedborders', '5px'));	
 $customcsscode = ($this->params->get('customcsscode', ''));	
 $customcodeattheend = ($this->params->get('customcodeattheend', ''));	
+$alignedcontentimagewidth = ($this->params->get('alignedcontentimagewidth', '40%'));	
+$alignedintroimagewidth = ($this->params->get('alignedintroimagewidth', '40%'));	
+
+$alignedintroimagefullwidth = ($this->params->get('alignedintroimagefullwidth', '1'));	
+if ($alignedintroimagefullwidth == '1') {
+	$alignedintroimagefullwidthcode = '.item-page figure.right, .blog-item figure.right, .item-page figure.left, .blog-item figure.left, .item-page figure.right img, .item-page figure.left img {
+			margin-left: 0px;
+			margin-right: 0px;
+			width: 100%;	
+			}';
+}
+
+$alignedcontimagefullwidth = ($this->params->get('alignedcontimagefullwidth', '0'));	
+if ($alignedcontimagefullwidth == '1') {
+	$alignedcontimagefullwidthcode = '.item-page img.left, .blog-item img.left, .item-page img.right, .blog-item img.right {
+		margin-left: 0px;
+		margin-right: 0px;
+		width: 100%;
+		}';
+}
