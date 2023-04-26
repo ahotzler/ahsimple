@@ -26,6 +26,16 @@ img.headerimage {
     border-bottom-style: solid;
   }
 }
+.content-category {
+  .category-desc {
+    margin-bottom: 1em;
+    img {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
+
+}
 .blog-item {
   margin-bottom: 3em;
 }
@@ -317,7 +327,7 @@ ol.breadcrumb {
         list-style: none;
         text-align: center;
         flex: 1;
-        &.active {
+        &.active { 
           text-decoration: underline;
         }
       }
@@ -343,4 +353,10 @@ ol.breadcrumb {
       margin-bottom: 0px;
     }
   }
+}
+.accordion-item  {
+  margin-bottom: 1em;
+}
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid rgba(0,0,0,.125)
 }

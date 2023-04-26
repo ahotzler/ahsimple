@@ -27,7 +27,7 @@ if ($tagId = $params->get('tag_id', ''))
 ?>
 <nav<?php echo $id; ?> class="mod-menu navbar-light <?php echo $class_sfx; ?>">
 	<div class="container-fluid m-0 p-0">
-		<button class="navbar-toggler custom-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar navbar-toggler custom-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"><span class="ttext">Menu</span></span>
     </button>
     

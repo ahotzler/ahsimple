@@ -7686,6 +7686,14 @@ img.headerimage {
   border-bottom-style: solid;
 }
 
+.content-category .category-desc {
+  margin-bottom: 1em;
+}
+.content-category .category-desc img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
 .blog-item {
   margin-bottom: 3em;
 }
@@ -8030,6 +8038,14 @@ ol.breadcrumb {
 
 .footer .mod-custom p:last-of-type {
   margin-bottom: 0px;
+}
+
+.accordion-item {
+  margin-bottom: 1em;
+}
+
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 @media (min-width: 992px) {
