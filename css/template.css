@@ -7896,38 +7896,32 @@ img.headerimage {
 
 @media (max-width: 767.98px) {
   joomla-tab[view=accordion] .col-md-9,
-joomla-tab[view=accordion] .col-md-3 {
+  joomla-tab[view=accordion] .col-md-3 {
     padding: 0.5rem 1rem !important;
   }
-
   #myTab {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
   }
-
   joomla-tab[view=accordion] ul li {
     width: 100%;
   }
-
   .subhead joomla-toolbar-button,
-.subhead .btn-group,
-.subhead .btn {
+  .subhead .btn-group,
+  .subhead .btn {
     width: 100%;
     margin-left: 0;
     text-align: left;
   }
-
   .subhead .btn-toolbar > .btn-group,
-.subhead .btn-toolbar > joomla-toolbar-button {
+  .subhead .btn-toolbar > joomla-toolbar-button {
     margin-left: 0;
   }
-
   .subhead .btn.btn-action::after {
     text-align: center;
     -webkit-margin-start: auto;
     margin-inline-start: auto;
   }
-
   .subhead .dropdown-toggle-split {
     width: auto;
   }
@@ -7996,6 +7990,15 @@ ol.breadcrumb {
 .content {
   margin-bottom: 2em;
   overflow-wrap: break-word;
+}
+.content table {
+  word-break: break-word;
+}
+.content table thead {
+  border-bottom-width: 1px;
+}
+.content table td {
+  padding: 2px 4px;
 }
 
 #atthetop {
@@ -8075,11 +8078,9 @@ ol.breadcrumb {
   .printonly {
     display: inherit;
   }
-
   .noprint {
     display: none;
   }
-
   #maincontainer {
     box-shadow: none;
   }

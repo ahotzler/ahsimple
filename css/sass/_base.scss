@@ -312,6 +312,15 @@ ol.breadcrumb {
 .content {
   margin-bottom: 2em; 
   overflow-wrap: break-word;
+  table {
+    word-break: break-word;
+    thead {
+      border-bottom-width: 1px;
+    }
+    td {
+      padding: 2px 4px;
+    }
+  }
 }
 #atthetop {
   margin: auto;
