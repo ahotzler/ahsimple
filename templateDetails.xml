@@ -10,7 +10,7 @@
 	<version>3.24</version>
 	<description>AHSimple Template</description>
 	<updateservers>
-		<server type="extension" priority="2" name="TPL_AHSIMPLE_XML_UPDATE_NAME">https://downloads.andrehotzler.de/.ahsimple/ahsimple.xml</server>
+		<server type="extension" priority="2" name="TPL_AHSIMPLE_XML_UPDATE_NAME">https://downloads.andrehotzler.de/ahsimple/ahsimple.xml</server>
 	</updateservers>
 	<files>
 		<folder>html</folder>
