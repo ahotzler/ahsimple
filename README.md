@@ -15,7 +15,8 @@ https://www.andrehotzler.de/en/projects/ahsimple-the-simple-joomla-template.html
 
 ## Demo
 
-[https://www.andrehotzler.de/] (Page based on this template)
+[https://www.andrehotzler.de/]
+(Page based on this template)
 
 ## More examples (lawyer, dentist - in German):
 
