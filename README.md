@@ -9,15 +9,15 @@ Since it does not use external data sources, it is GDPR-compliant.
 
 At the moment, the functions most frequently used by users and shown in the demo have been implemented, but it will be expanded over time.
 
-##Documentation
+## Documentation
 
 https://www.andrehotzler.de/en/projects/ahsimple-the-simple-joomla-template.html
 
-##Demo
+## Demo
 
 [https://www.andrehotzler.de/](Page based on this template)
 
-##More examples (lawyer, dentist - in German):
+## More examples (lawyer, dentist - in German):
 
 [https://www.die-kleine-webseite.de/]
 
