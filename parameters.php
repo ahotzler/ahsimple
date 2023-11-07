@@ -27,7 +27,7 @@ $headeralignment = ($this->params->get('headeralignment', 'sitename'));
 
 if ($headertype == 'headerimage') {
 	if ($linkedheader == 'yes') {
-			$headercontent = '<a href="/" title="Home"><img class="headerimage" src="' . Uri::root(true) . '/' . htmlspecialchars($this->params->get('headerimage'), ENT_QUOTES) . '" alt="' . $sitename . '"></a>';
+			$headercontent = '<a href="/" title="'.$sitename.'"><img class="headerimage" src="' . Uri::root(true) . '/' . htmlspecialchars($this->params->get('headerimage'), ENT_QUOTES) . '" alt="' . $sitename . '"></a>';
 		} else {
 			$headercontent = '<img class="headerimage" src="' . Uri::root(true) . '/' . htmlspecialchars($this->params->get('headerimage'), ENT_QUOTES) . '" alt="' . $sitename . '">';
 		}

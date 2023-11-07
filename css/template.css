@@ -8000,6 +8000,17 @@ ol.breadcrumb {
 .content table td {
   padding: 2px 4px;
 }
+.content ul.menu-incontent {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.content ul.menu-incontent li.deeper {
+  margin-bottom: 1em;
+}
+.content ul.menu-incontent li.deeper ul {
+  margin-left: 1em;
+}
 
 #atthetop {
   margin: auto;

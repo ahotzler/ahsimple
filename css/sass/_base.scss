@@ -321,6 +321,19 @@ ol.breadcrumb {
       padding: 2px 4px;
     }
   }
+  ul.menu-incontent {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    li {
+      &.deeper {
+        margin-bottom: 1em;
+        ul {
+          margin-left: 1em;
+        }
+      }
+    }
+  }
 }
 #atthetop {
   margin: auto;
