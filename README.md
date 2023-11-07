@@ -15,11 +15,11 @@ https://www.andrehotzler.de/en/projects/ahsimple-the-simple-joomla-template.html
 
 ## Demo
 
-[https://www.andrehotzler.de/]
+https://www.andrehotzler.de/
 (Page based on this template)
 
 ## More examples (lawyer, dentist - in German):
 
-[https://www.die-kleine-webseite.de/]
+https://www.die-kleine-webseite.de/
 
 The template is also available as a service including installation and setup.
