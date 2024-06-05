@@ -15,22 +15,25 @@ HTMLHelper::_('bootstrap.framework');
 HTMLHelper::_('bootstrap.dropdown');
 HTMLHelper::_('bootstrap.loadCss');
 
-$app             = JFactory::getApplication();
-$document             = JFactory::getDocument();
-$user            = JFactory::getUser();
+$document	= JFactory::getDocument();
+$user		= JFactory::getUser();
+$app   = Factory::getApplication();
+$input = $app->getInput();
+$wa    = $this->getWebAssetManager();
+
 $this->language  = $document->language;
 $this->direction = $document->direction;
+
+// Detecting Active Variables
+$option   = $input->getCmd('option', '');
+$view     = $input->getCmd('view', '');
+$layout   = $input->getCmd('layout', '');
+$task     = $input->getCmd('task', '');
+$itemid   = $input->getCmd('Itemid', '');
+$sitename = htmlspecialchars($app->get('sitename'), ENT_QUOTES, 'UTF-8');
+$menu     = $app->getMenu()->getActive();
 $pageclass = $menu !== null ? $menu->getParams()->get('pageclass_sfx', '') : '';
 
-// Getting params from template
-$params = $app->getTemplate(true)->params;
-// Detecting Active Variables
-$option   = $app->input->getCmd('option', '');
-$view     = $app->input->getCmd('view', '');
-$layout   = $app->input->getCmd('layout', '');
-$task     = $app->input->getCmd('task', '');
-$itemid   = $app->input->getCmd('Itemid', '');
-$sitename = $app->get('sitename');
 
 $ahtemplatepath = '/templates/'.$this->template.'/css/';
 $ahtemplaterootpath = JPATH_BASE.$ahtemplatepath;

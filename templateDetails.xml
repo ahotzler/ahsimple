@@ -2,12 +2,12 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 3.1//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="4.0" type="template" client="site">
 	<name>ahsimple</name>
-	<creationDate>08.11.2023</creationDate>
+	<creationDate>05.06.2024</creationDate>
 	<author>Andre Hotzler</author>
 	<authorEmail>ahsimpletemplate@nspw.andrehotzler.de</authorEmail>
 	<authorUrl>http://www.andrehotzler.de</authorUrl>
 	<copyright>Copyright Andre Hotzler</copyright>
-	<version>3.55</version>
+	<version>3.56</version>
 	<description>AHSimple Template</description>
 	<updateservers>
 		<server type="extension" priority="2" name="TPL_AHSIMPLE_XML_UPDATE_NAME">https://downloads.andrehotzler.de/.ahsimple/ahsimple.xml</server>
@@ -18,7 +18,7 @@
 		<folder>images</folder>
 		<filename>index.php</filename>
 		<filename>parameters.php</filename>
-		<filename>error.php</filename>
+		<filename>_error.php</filename>
 		<filename>template_preview.png</filename>
 		<filename>template_thumbnail.png</filename>
 		<filename>index.html</filename>
