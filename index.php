@@ -74,6 +74,9 @@ include('parameters.php');
         }
 	</script>	
 	<style>
+		.navbar-collapse  {
+			--bs-bg-opacity: <?php echo $menubackgroundopacity ?>;;
+		}
 		hr, h1, h2, h3, h4, h5, h6, a, a:hover, a#displayText, a#displayText:hover, #mobilemenucontainer ul li.active a, #mobilemenucontainer ul li a{
 			color: 	<?php echo $contrastcolor ?>;
 		}
@@ -125,8 +128,7 @@ include('parameters.php');
 			text-align: <?php echo $headeralignment ?>;
 		}
 		#maincontainer {
-			background-color: <?php echo $innerbackgroundcolor ?>;
-			opacity: <?php echo $innerbackgroundopacity ?>;
+			background: <?php echo $innerbackgroundcolor ?>;
 			max-width: <?php echo $templatewidth ?>;
 			border-radius: <?php echo $innerbackgroundroundedborders  ?>;
 			padding: <?php echo $innerpaddingmobile ?> 

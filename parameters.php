@@ -51,6 +51,7 @@ $sitebackgroundtype = ($this->params->get('sitebackgroundtype', 'color'));
 $sitebackgroundcolor = ($this->params->get('sitebackgroundcolor', '#eeeeee'));
 $sitebackgroundimage = ($this->params->get('sitebackgroundimage', 'sitename'));
 $innerbackgroundopacity = ($this->params->get('innerbackgroundopacity', '1'));	
+$menubackgroundopacity = $innerbackgroundopacity - 0.3; 
 
 if ($sitebackgroundtype == 'image') {
 	$sitebodybackgroundcsscode = 'background-color: transparent;';
@@ -83,3 +84,28 @@ if ($alignedcontimagefullwidth == '1') {
 		width: 100%;
 		}';
 }
+
+function hexToRgba($hex, $alpha = 1.0) {
+    // Hex ohne # verarbeiten
+    $hex = str_replace('#', '', $hex);
+
+    // Unterstützt 3- und 6-stellige Hex-Codes
+    if (strlen($hex) === 3) {
+        $hex = str_repeat($hex[0], 2) . str_repeat($hex[1], 2) . str_repeat($hex[2], 2);
+    }
+
+    // Überprüfen, ob der Hex-Farbcode gültig ist
+    if (strlen($hex) !== 6) {
+        return "Ungültiger Hex-Farbcode";
+    }
+
+    // RGB-Werte mit sscanf extrahieren
+    list($r, $g, $b) = sscanf($hex, "%02x%02x%02x");
+
+    // RGBA-Wert zurückgeben
+    return "rgba($r, $g, $b, $alpha)";
+}
+
+// Beispielaufrufe
+$innerbackgroundcolor = hexToRgba($innerbackgroundcolor, $innerbackgroundopacity); // Ausgabe: rgba(255, 87, 51, 1)
+
