@@ -59,20 +59,6 @@ include('parameters.php');
 	<jdoc:include type="metas" />
 	<jdoc:include type="styles" />
 	<jdoc:include type="scripts" />
-	<script>
-			function toggle() {
-      	var ele = document.getElementById("mobilemenucontainer");
-        var text = document.getElementById("displayText");
-        if(ele.style.display == "block") {
-        	ele.style.display = "none";
-          text.innerHTML = "<span class=\"fa fa-bars\"></span><?php echo $menuopenertext ?>";
-        }
-        else {
-        	ele.style.display = "block";
-        	text.innerHTML = "<span class=\"fa fa-bars\"></span></span><?php echo $menuclosetext ?>";
-        }
-        }
-	</script>	
 	<style>
 		.navbar-collapse  {
 			--bs-bg-opacity: <?php echo $menubackgroundopacity ?>;;
@@ -155,15 +141,13 @@ include('parameters.php');
     	#maincontainer {
         	border-radius: 0px !important;
     	}
-    	<?php echo $alignedintroimagefullwidthcode; ?>
-    	
-    	<?php echo $alignedcontimagefullwidthcode ?>
-    	
+    	<?php if (isset($alignedintroimagefullwidthcode)) { echo $alignedintroimagefullwidthcode; } ?>
+     	<?php if (isset($alignedcontimagefullwidthcode)) { echo $alignedcontimagefullwidthcode; } ?>	
 		}
 		<?php echo $customcsscode ?>
 	</style>
 </head>
-<body class="site <?php echo $option 	. ' ' . $wrapper . ' view-' . $view . ($layout ? ' layout-' . $layout : ' no-layout') . ($task ? ' task-' . $task : ' no-task') . ($itemid ? ' itemid-' . $itemid : '') . ($pageclass ? ' ' . $pageclass : '') . $hasClass . ($this->direction == 'rtl' ? ' rtl' : ''); ?>">
+<body class="site <?php echo $option 	. ' ' . ' view-' . $view . ($layout ? ' layout-' . $layout : ' no-layout') . ($task ? ' task-' . $task : ' no-task') . ($itemid ? ' itemid-' . $itemid : '') . ($pageclass ? ' ' . $pageclass : '') . ($this->direction == 'rtl' ? ' rtl' : ''); ?>">
 <div id="atthetop">
 	<jdoc:include type="modules" name="atthetop" style="html5" />		
 </div>
