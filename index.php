@@ -152,25 +152,32 @@ include('parameters.php');
 	<jdoc:include type="modules" name="atthetop" style="html5" />		
 </div>
 <div id="maincontainer" class="container shadow-sm  mb-0 mt-0 mb-sm-2 mt-sm-2 mb-md-3 mt-md-3 mb-lg-4 mt-lg-4">
-  <div class="header mb-4" role="heading">
-		<jdoc:include type="modules" name="header" style="raw" />			
-		<?php echo $headercontent ?>
-	</div>
-	<div class="menu mt-3 mb-3 noprint">
-		<jdoc:include type="modules" name="menu" />	
-	</div>
-  <div class="content" role="main">
-  	<jdoc:include type="modules" name="pathway" style="html5" />	
-  	<jdoc:include type="message" />
-  	<jdoc:include type="component" />				
-  	<div class="clearfix"></div>
-  </div>
-  <div class="footer" role="contentinfo">
-  	<hr>
-		<jdoc:include type="modules" name="footer" style="html5" />	
-	</div>
+	<header>
+  	<div class="header mb-4">
+			<jdoc:include type="modules" name="header" style="raw" />			
+			<?php echo $headercontent ?>
+		</div>
+	</header>
+	<nav>
+		<div class="menu mt-3 mb-3 noprint">
+			<jdoc:include type="modules" name="menu" />	
+		</div>
+	</nav>
+	<main>
+  	<div class="content">
+  		<jdoc:include type="modules" name="pathway" style="html5" />	
+	  	<jdoc:include type="message" />
+  		<jdoc:include type="component" />				
+  		<div class="clearfix"></div>
+  	</div>
+  </main>
+  <footer>
+  	<div class="footer" >
+  		<hr>
+			<jdoc:include type="modules" name="footer" style="html5" />	
+		</div>
+	</footer>
 </div>
 <?php echo $customcodeattheend ?>
 </body> 
 </html>
-
