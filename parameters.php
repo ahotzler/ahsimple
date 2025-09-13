@@ -64,6 +64,7 @@ if ($sitebackgroundtype == 'image') {
 $innerbackgroundroundedborders = ($this->params->get('innerbackgroundroundedborders', '5px'));	
 $customcsscode = ($this->params->get('customcsscode', ''));	
 $customcodeattheend = ($this->params->get('customcodeattheend', ''));	
+$custommeta = ($this->params->get('custommeta', ''));	
 $alignedcontentimagewidth = ($this->params->get('alignedcontentimagewidth', '40%'));	
 $alignedintroimagewidth = ($this->params->get('alignedintroimagewidth', '40%'));	
 

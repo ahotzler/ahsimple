@@ -57,6 +57,8 @@ include('parameters.php');
 	<meta name="DC.language" content="<?php echo $this->language; ?>">
 	<meta name="viewport" content="width=device-width">
 	<jdoc:include type="metas" />
+	<?php echo $custommeta ?>
+	
 	<jdoc:include type="styles" />
 	<jdoc:include type="scripts" />
 	<style>
