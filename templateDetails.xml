@@ -2,12 +2,12 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 3.1//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="4.0" type="template" client="site">
 	<name>ahsimple</name>
-	<creationDate>13.09.2025</creationDate>
+	<creationDate>20.10.2025</creationDate>
 	<author>Andre Hotzler</author>
 	<authorEmail>ahsimpletemplate@nspw.andrehotzler.de</authorEmail>
 	<authorUrl>http://www.andrehotzler.de</authorUrl>
 	<copyright>Copyright Andre Hotzler</copyright>
-	<version>3.65</version>
+	<version>3.66</version>
 	<description>AHSimple Template</description>
 	<updateservers>
 		<server type="extension" priority="2" name="TPL_AHSIMPLE_XML_UPDATE_NAME">https://downloads.andrehotzler.de/.ahsimple/ahsimple.xml</server>
@@ -66,6 +66,17 @@
 				<field name="sitebackgroundimage" type="media" default="./images/headers/blue-flower.jpg" label="TPL_AHSIMPLE_CONFIG_LABEL_BACKGROUNDIMAGE" showon="sitebackgroundtype:image" />
 				<field name="textcolor" type="color" default="#625f5f" label="TPL_AHSIMPLE_CONFIG_LABEL_TEXTCOLOR" />
 				<field name="contrastcolor" type="color" default="#415a7d" label="TPL_AHSIMPLE_CONFIG_LABEL_CONTRASTCOLOR" />
+				<field name="differentcontentlinkcolor" type="radio" label="TPL_AHSIMPLE_CONFIG_LABEL_DIFFERENTCONTENTLINKCOLOR" layout="joomla.form.field.radio.switcher" default="0" filter="boolean">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="hyperlinkcontentcolor" type="color" default="#415a7d" label="TPL_AHSIMPLE_CONFIG_LABEL_HYPERLINKCONTENTCOLOR" showon="differentcontentlinkcolor:1" />
+				<field name="hyperlinkicon" type="radio" label="TPL_AHSIMPLE_CONFIG_LABEL_HYPERLINKICON" layout="joomla.form.field.radio.switcher" default="0" filter="boolean">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="hyperlinkiconchar" type="text" default="\F08E" label="TPL_AHSIMPLE_CONFIG_LABEL_HYPERLINKICONCHAR" showon="hyperlinkicon:1" />
+				<field name="hyperlinkteliconchar" type="text" default="\F879" label="TPL_AHSIMPLE_CONFIG_LABEL_HYPERLINKTELICONCHAR" showon="hyperlinkicon:1" />
 				<field name="innerbackgroundcolor" type="color" default="#ffffff" label="TPL_AHSIMPLE_CONFIG_LABEL_INNERBGCOLOR" />
 				<field name="innerpaddingdesktop" type="text" default="48px" label="TPL_AHSIMPLE_CONFIG_LABEL_INNERPADDINGDESKTOP" />
 				<field name="innerpaddingmobile" type="text" default="24px" label="TPL_AHSIMPLE_CONFIG_LABEL_INNERPADDINGMOBILE" />

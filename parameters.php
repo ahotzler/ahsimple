@@ -10,6 +10,12 @@ use Joomla\CMS\Uri\Uri;
 
 $headerownext = ($this->params->get('headerownext', 'My Own Site'));
 $contrastcolor = ($this->params->get('contrastcolor', '#b85353'));
+$differentcontentlinkcolor = ($this->params->get('differentcontentlinkcolor', '0'));	
+$hyperlinkcontentcolor = ($this->params->get('hyperlinkcontentcolor', '#b85353'));
+if ($differentcontentlinkcolor == '1') {
+	$differentcontentlinkcolorcode = '.component a { color: '.$hyperlinkcontentcolor.'; }';
+
+};
 $textcolor = ($this->params->get('textcolor', '#000'));
 $sitebackgroundcolor = ($this->params->get('sitebackgroundcolor', '#eeeeee'));
 $innerbackgroundcolor = ($this->params->get('innerbackgroundcolor', '#ffffff'));
@@ -52,7 +58,6 @@ $sitebackgroundcolor = ($this->params->get('sitebackgroundcolor', '#eeeeee'));
 $sitebackgroundimage = ($this->params->get('sitebackgroundimage', 'sitename'));
 $innerbackgroundopacity = ($this->params->get('innerbackgroundopacity', '1'));	
 $menubackgroundopacity = $innerbackgroundopacity - 0.3; 
-
 if ($sitebackgroundtype == 'image') {
 	$sitebodybackgroundcsscode = 'background-color: transparent;';
 	$sitebodybackgroundaftercsscode = 'content: url("'. Uri::root(true) . '/' . htmlspecialchars($this->params->get('sitebackgroundimage'), ENT_QUOTES) .'");';
@@ -67,7 +72,6 @@ $customcodeattheend = ($this->params->get('customcodeattheend', ''));
 $custommeta = ($this->params->get('custommeta', ''));	
 $alignedcontentimagewidth = ($this->params->get('alignedcontentimagewidth', '40%'));	
 $alignedintroimagewidth = ($this->params->get('alignedintroimagewidth', '40%'));	
-
 $alignedintroimagefullwidth = ($this->params->get('alignedintroimagefullwidth', '1'));	
 if ($alignedintroimagefullwidth == '1') {
 	$alignedintroimagefullwidthcode = '.item-page figure.right, .blog-item figure.right, .item-page figure.left, .blog-item figure.left, .item-page figure.right img, .item-page figure.left img {
@@ -76,7 +80,6 @@ if ($alignedintroimagefullwidth == '1') {
 			width: 100%;	
 			}';
 }
-
 $alignedcontimagefullwidth = ($this->params->get('alignedcontimagefullwidth', '0'));	
 if ($alignedcontimagefullwidth == '1') {
 	$alignedcontimagefullwidthcode = '.item-page img.left, .blog-item img.left, .item-page img.right, .blog-item img.right {
@@ -85,25 +88,39 @@ if ($alignedcontimagefullwidth == '1') {
 		width: 100%;
 		}';
 }
+$hyperlinkicon = ($this->params->get('hyperlinkicon', '0'));	
 
+if ($hyperlinkicon == '1') {
+	$hyperlinkiconchar = ($this->params->get('hyperlinkiconchar', '\F08E'));	
+	$hyperlinkteliconchar = ($this->params->get('hyperlinkteliconchar', '\F879'));	
+	$hyperlinkiconcode = '.component a::before {
+		font-family: "Font Awesome 6 Free";
+		content: "'.$hyperlinkiconchar.'";
+		margin-right: .35em;
+		display: inline-block;
+		font-size: 0.9em; }
+		.component a[href^="tel"]::before {
+		content: "'.$hyperlinkteliconchar.'" };	
+		';
+};
 function hexToRgba($hex, $alpha = 1.0) {
     // Hex ohne # verarbeiten
     $hex = str_replace('#', '', $hex);
 
-    // Unterstützt 3- und 6-stellige Hex-Codes
+    // Unterstï¿½tzt 3- und 6-stellige Hex-Codes
     if (strlen($hex) === 3) {
         $hex = str_repeat($hex[0], 2) . str_repeat($hex[1], 2) . str_repeat($hex[2], 2);
     }
 
-    // Überprüfen, ob der Hex-Farbcode gültig ist
+    // ï¿½berprï¿½fen, ob der Hex-Farbcode gï¿½ltig ist
     if (strlen($hex) !== 6) {
-        return "Ungültiger Hex-Farbcode";
+        return "Ungï¿½ltiger Hex-Farbcode";
     }
 
     // RGB-Werte mit sscanf extrahieren
     list($r, $g, $b) = sscanf($hex, "%02x%02x%02x");
 
-    // RGBA-Wert zurückgeben
+    // RGBA-Wert zurï¿½ckgeben
     return "rgba($r, $g, $b, $alpha)";
 }
 

@@ -146,10 +146,12 @@ include('parameters.php');
     	<?php if (isset($alignedintroimagefullwidthcode)) { echo $alignedintroimagefullwidthcode; } ?>
      	<?php if (isset($alignedcontimagefullwidthcode)) { echo $alignedcontimagefullwidthcode; } ?>	
 		}
+		<?php if (isset($differentcontentlinkcolorcode)) { echo $differentcontentlinkcolorcode; } ?>	
+		<?php if (isset($hyperlinkiconcode)) { echo $hyperlinkiconcode; } ?>	
 		<?php echo $customcsscode ?>
 	</style>
 </head>
-<body class="site <?php echo $option 	. ' ' . ' view-' . $view . ($layout ? ' layout-' . $layout : ' no-layout') . ($task ? ' task-' . $task : ' no-task') . ($itemid ? ' itemid-' . $itemid : '') . ($pageclass ? ' ' . $pageclass : '') . ($this->direction == 'rtl' ? ' rtl' : ''); ?>">
+<body class="site <?php echo $option . ' ' . ' view-' . $view . ($layout ? ' layout-' . $layout : ' no-layout') . ($task ? ' task-' . $task : ' no-task') . ($itemid ? ' itemid-' . $itemid : '') . ($pageclass ? ' ' . $pageclass : '') . ($this->direction == 'rtl' ? ' rtl' : ''); ?>">
 <div id="atthetop">
 	<jdoc:include type="modules" name="atthetop" style="html5" />		
 </div>
@@ -168,8 +170,12 @@ include('parameters.php');
 	<main>
   	<div class="content">
   		<jdoc:include type="modules" name="pathway" style="html5" />	
-	  	<jdoc:include type="message" />
-  		<jdoc:include type="component" />				
+	  	<div class="messages">
+	  		<jdoc:include type="message" />
+	  	</div>
+	  	<div class="component">
+  			<jdoc:include type="component" />				
+			</div>  			
   		<div class="clearfix"></div>
   	</div>
   </main>
