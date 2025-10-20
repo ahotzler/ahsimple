@@ -100,7 +100,7 @@ if ($hyperlinkicon == '1') {
 		display: inline-block;
 		font-size: 0.9em; }
 		.component a[href^="tel"]::before {
-		content: "'.$hyperlinkteliconchar.'" };	
+		content: "'.$hyperlinkteliconchar.'"; }	
 		';
 };
 function hexToRgba($hex, $alpha = 1.0) {
