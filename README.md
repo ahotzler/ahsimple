@@ -5,9 +5,9 @@ The clean and simple Joomla! template enables a quick and efficient start on the
 Colors, images, logos, and content can be easily customized to suit individual needs. It works entirely without third-party elements such as page builders, relying instead on Joomla!'s native features to ensure a streamlined and stable user experience.\
 The template is built with clean, lightweight code optimized for fast loading times and maximum performance. It fully supports the Joomla! update system, for long-term compatibility and ease of maintenance.
 
-The layout remains consistent across desktop and mobile devices, which significantly accelerates the initial setup—there’s no need to manage or adapt separate views.
+The layout remains consistent across desktop and mobile devices, which significantly accelerates the initial setup - there’s no need to manage or adapt separate views.
 
-Furthermore, the template does not load any external resources such as third-party fonts; all assets remain local. This avoids unintended data transfers to external servers and helps minimize potential privacy concerns under the General Data Protection Regulation (GDPR) (Please note that this privacy-friendly setup applies solely to the template itself—any additional extensions or custom implementations must be carefully reviewed to ensure they do not introduce external data sources).
+Furthermore, the template does not load any external resources such as third-party fonts; all assets remain local. This avoids unintended data transfers to external servers and helps minimize potential privacy concerns under the General Data Protection Regulation (GDPR) (Please note that this privacy-friendly setup applies solely to the template itself - any additional extensions or custom implementations must be carefully reviewed to ensure they do not introduce external data sources).
 
 ## Main Features of the Clean Joomla! Template
 
@@ -26,6 +26,8 @@ Furthermore, the template does not load any external resources such as third-par
 ![Example image of how a website created with the ahsimple template might look](https://www.sofort-start-webseite.de/images/ahsimple-template-lawyer-example.jpg)
 ### template configuration in backend
 ![Example of template configuration](https://www.sofort-start-webseite.de/images/ahsimple-template-settings-english.jpg)
+### module positions 
+![Example image of template module positions](https://www.sofort-start-webseite.de/images/ahsimple-template-module-positions.jpg)
 ## live examples
 
 [Live Example 1 Dentist, german language](https://www.sofort-start-webseite.de/beispiel-zahnarzt/zahnaerzte-mueller-schneider-muenchen-trudering.html)\
