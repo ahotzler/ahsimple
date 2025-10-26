@@ -24,7 +24,7 @@ See https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 I am notnot affiliated with or endorsed by the Joomla Project or Open Source Matters. 
 
-Credits for example screenshot "frontend"ß:
+Credits for example screenshot "frontend":\
 Logo lawyer: [istockphoto / amsterdam](https://www.istockphoto.com/de/portfolio/artsterdam)\
 Lawyer: [istockphoto / StefaNikolic](https://www.istockphoto.com/de/portfolio/StefaNikolic)\
 Background Lawyer: [istockphoto / Chinnapong](https://www.istockphoto.com/de/portfolio/noipornpan)
