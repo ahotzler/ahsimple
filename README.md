@@ -26,7 +26,7 @@ Furthermore, the template does not load any external resources such as third-par
 Taken from live Example Dentist (see below)
 ![Example image of how a website created with the ahsimple template might look](https://www.sofort-start-webseite.de/images/ahsimple-template-lawyer-example.jpg)
 ### template configuration in backend 
-The screenshot below shows a part of the available configuration options. Please note that this is only a small excerpt—many more settings are available to fine-tune layout, design, and functionality directly within the Joomla! administrator interface.
+The screenshot below shows a part of the available configuration options. Please note that this is only a small excerpt - many more settings are available to fine-tune layout, design, and functionality directly within the Joomla! administrator interface.
 ![Example of template configuration](https://www.sofort-start-webseite.de/images/ahsimple-template-settings-english.jpg)
 ### module positions 
 ![Example image of template module positions](https://www.sofort-start-webseite.de/images/ahsimple-template-module-positions.jpg)
@@ -38,7 +38,7 @@ The screenshot below shows a part of the available configuration options. Please
 
 The template is also available as a service including installation and setup [here](https://www.sofort-start-webseite.de/)
 
-Documentation can be found here: https://www.andrehotzler.de/en/projects/ahsimple-the-simple-joomla-template.html
+A shot installation video in german language can be found here: https://www.andrehotzler.de/en/projects/ahsimple-the-simple-joomla-template.html
 
 This template contains modified Joomla overrides (in "html" folder).
 Joomla! is licensed under the GNU General Public License v2 or later.
