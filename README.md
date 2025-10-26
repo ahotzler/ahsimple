@@ -1,9 +1,10 @@
 # ahsimple - simple joomla! template
 ahsimple - the simple Joomla! template was created as a programming exercise. The simple Joomla! template enables a quick start on the Internet, as the layout is largely predefined. Colors, images, logos and content can be adapted.
 
-## example screenshot
-
-![Example image of how a website created with the ahsimple template might look](https://raw.githubusercontent.com/ahotzler/ahsimple/refs/heads/main/template_preview.png)
+## example screenshots
+### frontend 
+![Example image of how a website created with the ahsimple template might look](https://www.sofort-start-webseite.de/images/ahsimple-template-lawyer-example.jpg)
+### template configuration in backend
 ![Example of template configuration](https://www.sofort-start-webseite.de/images/ahsimple-template-settings-english.jpg)
 ## live examples
 
