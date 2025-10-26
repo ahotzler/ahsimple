@@ -11,15 +11,15 @@ Furthermore, the template does not load any external resources such as third-par
 
 ## Main Features of the Clean Joomla! Template
 
-- ⚡ **Fast loading times** thanks to lean and efficient design
-- 🧼 **Clean, maintainable code** for long-term stability and performance
-- 🧩 **Clearly defined module positions** for header, menu, pathway, footer, and multilingual support
-- 🎛️ **Flexible configuration via Joomla! backend**: adjust layout width, backgrounds, header options, font sizes, and image settings without touching code
-- ♿ **Accessibility-ready** with semantic region definitions in the template markup
-- 🛠️ **Custom code fields**: Easily add your own CSS, meta head entries, or scripts before the `</body>`—all update-safe and directly in the template settings
-- 🚫 **No page builders required**: Uses only native Joomla! features
-- 🎨 **Built on Joomla!'s native Bootstrap CSS framework**
-- ✨ **Font Awesome support** included for easy icon integration
+- **Fast loading times** thanks to lean and efficient design
+- **Clean, maintainable code** for long-term stability and performance
+- **Clearly defined module positions** for header, menu, pathway, footer, and multilingual support
+- **Flexible configuration via Joomla! backend**: adjust layout width, backgrounds, header options, font sizes, and image settings without touching code
+- **Accessibility-ready** with semantic region definitions in the template markup
+- **Custom code fields**: Easily add your own CSS, meta head entries, or scripts before the `</body>`—all update-safe and directly in the template settings
+- **No page builders required**: Uses only native Joomla! features
+- **Built on Joomla!'s native Bootstrap CSS framework**
+- **Font Awesome support** included for easy icon integration
 
 ## example screenshots
 ### frontend 
