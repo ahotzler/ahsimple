@@ -8,8 +8,8 @@ ahsimple - the simple Joomla! template was created as a programming exercise. Th
 ![Example of template configuration](https://www.sofort-start-webseite.de/images/ahsimple-template-settings-english.jpg)
 ## live examples
 
-[Live Example 1 Dentist, german language](https://www.sofort-start-webseite.de/beispiel-zahnarzt/zahnaerzte-mueller-schneider-muenchen-trudering.html) 
-[Live Example 2 Lawyer, german language)](https://www.sofort-start-webseite.de/beispiel-anwalt/home.html)
+[Live Example 1 Dentist, german language](https://www.sofort-start-webseite.de/beispiel-zahnarzt/zahnaerzte-mueller-schneider-muenchen-trudering.html)\
+[Live Example 2 Lawyer, german language)](https://www.sofort-start-webseite.de/beispiel-anwalt/home.html)\
 [Live Example 3 my website, multilanguage](https://www.andrehotzler.de/en/)
 
 The template is also available as a service including installation and setup [here](https://www.sofort-start-webseite.de/)
@@ -17,8 +17,8 @@ The template is also available as a service including installation and setup [he
 Documentation can be found here: https://www.andrehotzler.de/en/projects/ahsimple-the-simple-joomla-template.html
 
 Credits for example image:
-Logo lawyer: [istockphoto / amsterdam](https://www.istockphoto.com/de/portfolio/artsterdam)
-Lawyer: [istockphoto / StefaNikolic](https://www.istockphoto.com/de/portfolio/StefaNikolic)
+Logo lawyer: [istockphoto / amsterdam](https://www.istockphoto.com/de/portfolio/artsterdam)\
+Lawyer: [istockphoto / StefaNikolic](https://www.istockphoto.com/de/portfolio/StefaNikolic)\
 Background Lawyer: [istockphoto / Chinnapong](https://www.istockphoto.com/de/portfolio/noipornpan)
 
 This template contains modified Joomla overrides (in "html" folder).
