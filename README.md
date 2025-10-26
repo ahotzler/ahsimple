@@ -8,7 +8,7 @@ ahsimple - the simple Joomla! template was created as a programming exercise. Th
 ![Example of template configuration](https://www.sofort-start-webseite.de/images/ahsimple-template-settings-english.jpg)
 ## live examples
 
-[Live Example 1 Dentist, german language](https://www.sofort-start-webseite.de/beispiel-zahnarzt/zahnaerzte-mueller-schneider-muenchen-trudering.html)
+[Live Example 1 Dentist, german language](https://www.sofort-start-webseite.de/beispiel-zahnarzt/zahnaerzte-mueller-schneider-muenchen-trudering.html) 
 [Live Example 2 Lawyer, german language)](https://www.sofort-start-webseite.de/beispiel-anwalt/home.html)
 [Live Example 3 my website, multilanguage](https://www.andrehotzler.de/en/)
 
@@ -27,4 +27,4 @@ Joomla! is licensed under the GNU General Public License v2 or later.
 This template is licensed under the GNU General Public License v2.0 or later.
 See https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
-I am notnot affiliated with or endorsed by the Joomla Project or Open Source Matters.
+I am notnot affiliated with or endorsed by the Joomla Project or Open Source Matters. 
