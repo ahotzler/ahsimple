@@ -7,7 +7,7 @@ ahsimple - the simple Joomla! template was created as a programming exercise. Th
 
 ## live examples
 
-[Live Example 1 Dentist, german language] (https://www.sofort-start-webseite.de/beispiel-zahnarzt/zahnaerzte-mueller-schneider-muenchen-trudering.html)
+[Live Example 1 Dentist, german language](https://www.sofort-start-webseite.de/beispiel-zahnarzt/zahnaerzte-mueller-schneider-muenchen-trudering.html)
 Live Example 2 (Lawyer, in german): https://www.sofort-start-webseite.de/beispiel-anwalt/home.html
 Live Example 3 (my website, multilanguage): https://www.andrehotzler.de/en/ 
 
