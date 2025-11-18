@@ -38,7 +38,7 @@ The screenshot below shows a part of the available configuration options. Please
 
 The template is also available as a service including installation and setup [here](https://www.sofort-start-webseite.de/)
 
-A shot installation video in german language can be found here: https://www.andrehotzler.de/en/projects/ahsimple-the-simple-joomla-template.html
+A short installation video in german language can be found here: https://www.andrehotzler.de/en/projects/ahsimple-the-simple-joomla-template.html
 
 This template contains modified Joomla overrides (in "html" folder).
 Joomla! is licensed under the GNU General Public License v2 or later.
