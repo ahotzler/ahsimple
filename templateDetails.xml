@@ -7,7 +7,7 @@
 	<authorEmail>ahsimpletemplate@nspw.andrehotzler.de</authorEmail>
 	<authorUrl>http://www.andrehotzler.de</authorUrl>
 	<copyright>Copyright Andre Hotzler</copyright>
-	<version>3.71</version>
+	<version>3.73</version>
 	<description>AHSimple Template</description>
 	<updateservers>
 		<server type="extension" priority="2" name="TPL_AHSIMPLE_XML_UPDATE_NAME">https://downloads.andrehotzler.de/.ahsimple/ahsimple.xml</server>
@@ -18,7 +18,7 @@
 		<folder>images</folder>
 		<filename>index.php</filename>
 		<filename>parameters.php</filename>
-		<filename>_error.php</filename>
+		<filename>error.php</filename>
 		<filename>template_preview.png</filename>
 		<filename>template_thumbnail.png</filename>
 		<filename>index.html</filename>
