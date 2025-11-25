@@ -15,9 +15,9 @@ HTMLHelper::_('bootstrap.framework');
 HTMLHelper::_('bootstrap.dropdown');
 HTMLHelper::_('bootstrap.loadCss');
 
-$document	= JFactory::getDocument();
-$user		= JFactory::getUser();
-$app   = Factory::getApplication();
+$document	= Joomla\CMS\Factory::getDocument();
+$user		= Joomla\CMS\Factory::getUser();
+$app   = Joomla\CMS\Factory::getApplication();
 $input = $app->getInput();
 $wa    = $this->getWebAssetManager();
 
