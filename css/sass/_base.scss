@@ -26,16 +26,7 @@ img.headerimage {
     border-bottom-style: solid;
   }
 }
-.content-category {
-  .category-desc {
-    margin-bottom: 1em;
-    img {
-      width: 100%;
-      margin-bottom: 1em;
-    }
-  }
 
-}
 .blog-item {
   margin-bottom: 1.5em;
 }
@@ -95,12 +86,14 @@ img.headerimage {
     max-width: none;
 }
 .category-desc {
-  margin-bottom: 40px; 
-  img {
-    display: block;
-    max-width: 100%;
+    margin-bottom: 2em;
+    img {
+      width: 100%;
+      display: block;
+      margin-bottom: 1em; 
+    }
   }
-}
+
 .editor-xtd-buttons .btn {
     margin-bottom: 5px;
   }

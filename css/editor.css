@@ -18,20 +18,24 @@ h1, h2, h3, h4, h5, h6 {
   color: #a72916;
   font-weight: normal;
   line-height: 1.3em;
+  margin-top: 1em;
+  margin-bottom: 0.8em;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+p {
   margin-top: 0px;
 }
 
-h1, h2 {
+h1 {
   font-size: 32px;
-  margin-top: 1em;
-  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 28px;
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 24px;
 }
 
 h4 {
