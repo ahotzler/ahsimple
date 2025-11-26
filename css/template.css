@@ -11368,6 +11368,7 @@ img.headerimage {
 .item-page img, .blog-item img {
   max-width: 100%;
   margin-bottom: 1rem;
+  display: block;
 }
 .item-page img.left, .blog-item img.left {
   width: 40%;
@@ -11394,6 +11395,10 @@ img.headerimage {
 
 .category-desc {
   margin-bottom: 40px;
+}
+.category-desc img {
+  display: block;
+  max-width: 100%;
 }
 
 .editor-xtd-buttons .btn {
@@ -11704,6 +11709,10 @@ ol.breadcrumb {
 
 .accordion-item:not(:first-of-type) {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+p.readmore {
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 992px) {

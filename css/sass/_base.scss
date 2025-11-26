@@ -70,6 +70,7 @@ img.headerimage {
     img {
         max-width: 100%;
         margin-bottom: 1rem;
+        display: block;
         &.left {
             width: 40%;
             float: left;
@@ -94,7 +95,11 @@ img.headerimage {
     max-width: none;
 }
 .category-desc {
-  margin-bottom: 40px;
+  margin-bottom: 40px; 
+  img {
+    display: block;
+    max-width: 100%;
+  }
 }
 .editor-xtd-buttons .btn {
     margin-bottom: 5px;
@@ -351,7 +356,7 @@ ol.breadcrumb {
         flex: 1;
         &.active { 
           a {
-          text-decoration: underline;
+          text-decoration: underline; 
           }
         }
       }
@@ -383,4 +388,7 @@ ol.breadcrumb {
 }
 .accordion-item:not(:first-of-type) {
   border-top: 1px solid rgba(0,0,0,.125)
+}
+p.readmore {
+  margin-bottom: 2rem;
 }
