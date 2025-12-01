@@ -173,10 +173,12 @@ include('parameters.php');
 	  	<div class="messages">
 	  		<jdoc:include type="message" />
 	  	</div>
+		<jdoc:include type="modules" name="abovecontent" style="html5" />	
 	  	<div class="component">
   			<jdoc:include type="component" />				
 			</div>  			
   		<div class="clearfix"></div>
+		<jdoc:include type="modules" name="beneathcontent" style="html5" />	
   	</div>
   </main>
   <footer>
