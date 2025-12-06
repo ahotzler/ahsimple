@@ -93,7 +93,7 @@ include('parameters.php');
 		body {
 			font-size: <?php echo $fontsize ?>;
 			color: <?php echo $textcolor ?>;
-		  <?php echo $sitebodybackgroundcsscode ?>;
+		  	<?php echo $sitebodybackgroundcsscode ?>;
 		}
 		body:after {
 			display: none;
@@ -149,6 +149,13 @@ include('parameters.php');
 		<?php if (isset($differentcontentlinkcolorcode)) { echo $differentcontentlinkcolorcode; } ?>	
 		<?php if (isset($hyperlinkiconcode)) { echo $hyperlinkiconcode; } ?>	
 		<?php echo $customcsscode ?>
+
+		<?php if (!empty($font_css)) : ?>
+				<?php echo $font_css; ?>
+		<?php endif; ?>
+
+
+
 	</style>
 </head>
 <body class="site <?php echo $option . ' ' . ' view-' . $view . ($layout ? ' layout-' . $layout : ' no-layout') . ($task ? ' task-' . $task : ' no-task') . ($itemid ? ' itemid-' . $itemid : '') . ($pageclass ? ' ' . $pageclass : '') . ($this->direction == 'rtl' ? ' rtl' : ''); ?>">

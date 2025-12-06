@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box; 
-}
+} 
 body {
   min-width: 420px;
 }
@@ -384,4 +384,22 @@ ol.breadcrumb {
 }
 p.readmore {
   margin-bottom: 2rem;
+}
+div.mod-languages {
+	margin-top: 5px;
+}
+div.mod-languages ul {
+	text-align: right;
+}
+div.mod-languages ul li.lang-active {
+	background-color: transparent;
+}
+div.mod-languages ul li a img {
+	opacity: 0.5;
+}
+div.mod-languages ul li {
+	margin: 0px;
+}
+div.mod-languages ul li.lang-active a img, div.mod-languages ul li a:hover img {
+	opacity: 1;
 }

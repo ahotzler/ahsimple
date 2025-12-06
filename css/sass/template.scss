@@ -2,9 +2,11 @@
 /*Andre Hotzler EDV_Dienstleistungen http://www.andrehotzler.de*/
 /*Copyright CSS Code 2019 Andre Hotzler*/
 @import "variables";
-@import "roboto";
+@import "roboto/roboto/sass/roboto-fontface"; 
+@import "roboto/roboto-condensed/sass/roboto-condensed-fontface";
+@import "roboto/roboto-slab/sass/roboto-slab-fontface";
 @import "fontawesome/fontawesome";
-@import "fontawesome/solid";
+@import "fontawesome/solid"; 
 @import "content_styles";
 @import "base";
 @import "bootstrapoverrides";
