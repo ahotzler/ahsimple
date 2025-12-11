@@ -95,7 +95,7 @@ if ($hyperlinkicon == '1') {
 	$hyperlinkteliconchar = ($this->params->get('hyperlinkteliconchar', '\F879'));	
     $hyperlinkemailiconchar = ($this->params->get('hyperlinkemailiconchar', '\F0E0'));	
 	$hyperlinkiconcode = '
-    .item-content :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a::before {
+    .item-content :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a::before, .item-page :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a::before {
         font-family: "Font Awesome 6 Free";
         content: "'.$hyperlinkiconchar.'";
         margin-right: .35em;
@@ -103,10 +103,10 @@ if ($hyperlinkicon == '1') {
         font-size: 0.9em;
         white-space: nowrap;
     }
-    .item-content :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a[href^="tel"]::before {
+    .item-content :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a[href^="tel"]::before, .item-page :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a[href^="tel"]::before  {
         content: "'.$hyperlinkteliconchar.'";
     }
-    .item-content :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a[href^="mailto"]::before {
+    .item-content :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a[href^="mailto"]::before, .item-page :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a[href^="mailto"]::before  {
         content: "'.$hyperlinkemailiconchar.'";
     }
 	';
