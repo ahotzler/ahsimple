@@ -2,12 +2,12 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 3.1//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="5.0" type="template" client="site">
 	<name>ahsimple</name>
-	<creationDate>06.12.2025</creationDate>
+	<creationDate>11.12.2025</creationDate>
 	<author>Andre Hotzler</author>
 	<authorEmail>ahsimpletemplate@nspw.andrehotzler.de</authorEmail>
 	<authorUrl>http://www.andrehotzler.de</authorUrl>
 	<copyright>Copyright Andre Hotzler</copyright>
-	<version>3.84</version>
+	<version>3.85</version>
 	<description>ahsimple Template</description>
 	<updateservers>
 		<server type="extension" priority="2" name="TPL_AHSIMPLE_XML_UPDATE_NAME">https://downloads.andrehotzler.de/.ahsimple/ahsimple.xml</server>
@@ -105,8 +105,9 @@
 					<option value="1">JYES</option>
 				</field>
 				<field name="hyperlinkicon_note" type="note" description="TPL_AHSIMPLE_CONFIG_HYPERLINKICON_NOTE" class="alert alert-info" showon="hyperlinkicon:1" />
-				<field name="hyperlinkiconchar" type="text" default="\\F08E" label="TPL_AHSIMPLE_CONFIG_LABEL_HYPERLINKICONCHAR" description="TPL_AHSIMPLE_CONFIG_DESC_HYPERLINKICONCHAR" showon="hyperlinkicon:1" />
-				<field name="hyperlinkteliconchar" type="text" default="\\F879" label="TPL_AHSIMPLE_CONFIG_LABEL_HYPERLINKTELICONCHAR" description="TPL_AHSIMPLE_CONFIG_DESC_HYPERLINKTELICONCHAR" showon="hyperlinkicon:1" />
+				<field name="hyperlinkiconchar" type="text" default="\F08E" label="TPL_AHSIMPLE_CONFIG_LABEL_HYPERLINKICONCHAR" description="TPL_AHSIMPLE_CONFIG_DESC_HYPERLINKICONCHAR" showon="hyperlinkicon:1" />
+				<field name="hyperlinkteliconchar" type="text" default="\F879" label="TPL_AHSIMPLE_CONFIG_LABEL_HYPERLINKTELICONCHAR" description="TPL_AHSIMPLE_CONFIG_DESC_HYPERLINKTELICONCHAR" showon="hyperlinkicon:1" />
+				<field name="hyperlinkemailiconchar" type="text" default="\F0E0" label="TPL_AHSIMPLE_CONFIG_LABEL_HYPERLINKEMAILICONCHAR" description="TPL_AHSIMPLE_CONFIG_DESC_HYPERLINKEMAILICONCHAR" showon="hyperlinkicon:1" />
 				<field name="innerbackgroundcolor" type="color" default="#ffffff" label="TPL_AHSIMPLE_CONFIG_LABEL_INNERBGCOLOR" />
 				<field name="innerpaddingdesktop" type="text" default="48px" label="TPL_AHSIMPLE_CONFIG_LABEL_INNERPADDINGDESKTOP" />
 				<field name="innerpaddingmobile" type="text" default="24px" label="TPL_AHSIMPLE_CONFIG_LABEL_INNERPADDINGMOBILE" />

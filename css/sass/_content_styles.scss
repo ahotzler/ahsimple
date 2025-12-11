@@ -4,9 +4,9 @@
 	font-size: 20px;
 	line-height: 1.5em;
 }
-h1, h2 ,h3, h4 ,h5 ,h6 {
-	color: $color1;
-	font-weight: normal;
+h1, h2 ,h3, h4 ,h5 ,h6 { 
+	color: $color1;  
+	font-weight: normal; 
 	line-height: 1.3em;
 	margin-top: 1.0em;
 	margin-bottom: 0.8em;
@@ -32,6 +32,7 @@ a {
 	}
 	color: $color1;
 	text-decoration: none;
+	white-space: nowrap; 
 }
 a:hover {
 	color: $color1;

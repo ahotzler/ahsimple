@@ -93,15 +93,23 @@ $hyperlinkicon = ($this->params->get('hyperlinkicon', '0'));
 if ($hyperlinkicon == '1') {
 	$hyperlinkiconchar = ($this->params->get('hyperlinkiconchar', '\F08E'));	
 	$hyperlinkteliconchar = ($this->params->get('hyperlinkteliconchar', '\F879'));	
-	$hyperlinkiconcode = '.component a::before {
-		font-family: "Font Awesome 6 Free";
-		content: "'.$hyperlinkiconchar.'";
-		margin-right: .35em;
-		display: inline-block;
-		font-size: 0.9em; }
-		.component a[href^="tel"]::before {
-		content: "'.$hyperlinkteliconchar.'"; }	
-		';
+    $hyperlinkemailiconchar = ($this->params->get('hyperlinkemailiconchar', '\F0E0'));	
+	$hyperlinkiconcode = '
+    .item-content :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a::before {
+        font-family: "Font Awesome 6 Free";
+        content: "'.$hyperlinkiconchar.'";
+        margin-right: .35em;
+        display: inline-block;
+        font-size: 0.9em;
+        white-space: nowrap;
+    }
+    .item-content :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a[href^="tel"]::before {
+        content: "'.$hyperlinkteliconchar.'";
+    }
+    .item-content :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a[href^="mailto"]::before {
+        content: "'.$hyperlinkemailiconchar.'";
+    }
+	';
 };
 function hexToRgba($hex, $alpha = 1.0) {
     $hex = str_replace('#', '', $hex);
