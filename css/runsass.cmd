@@ -1,2 +1,2 @@
 start sass --silence-deprecation=global-builtin --silence-deprecation=import --watch .\sass\editor.scss:.\editor.min.css --watch .\sass\template.scss:.\template.min.css --style compressed
-start sass --silence-deprecation=global-builtin --silence-deprecation=import --watch .\sass\editor.scss:.\editor.min.css --watch .\sass\template.scss:.\template.min.css
+start sass --silence-deprecation=global-builtin --silence-deprecation=import --watch .\sass\editor.scss:.\editor.css --watch .\sass\template.scss:.\template.css
