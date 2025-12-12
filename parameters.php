@@ -99,9 +99,7 @@ if ($hyperlinkicon == '1') {
         font-family: "Font Awesome 6 Free";
         content: "'.$hyperlinkiconchar.'";
         margin-right: .35em;
-        display: inline-block;
         font-size: 0.9em;
-        white-space: nowrap;
     }
     .item-content :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a[href^="tel"]::before, .item-page :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a[href^="tel"]::before  {
         content: "'.$hyperlinkteliconchar.'";
