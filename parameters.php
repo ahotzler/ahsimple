@@ -133,7 +133,7 @@ $fontVariantRobotoCondensed = $this->params->get('font_variant_roboto_condensed'
 $fontVariantRobotoSlab      = $this->params->get('font_variant_roboto_slab', 'Regular');
 
 // NEU: Überschriften-Gewicht wie Body?
-$headingsSameWeight = (int) $this->params->get('headings_same_weight', 0);
+$headingsSameWeight = (int) $this->params->get('headings_same_weight', 1);
 
 // Debug (optional)
 $debug_font_family  = $fontFamily;
