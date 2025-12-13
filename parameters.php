@@ -132,7 +132,10 @@ $fontVariantRoboto          = $this->params->get('font_variant_roboto', 'Regular
 $fontVariantRobotoCondensed = $this->params->get('font_variant_roboto_condensed', 'Regular');
 $fontVariantRobotoSlab      = $this->params->get('font_variant_roboto_slab', 'Regular');
 
-// Debug für index.php (optional)
+// NEU: Überschriften-Gewicht wie Body?
+$headingsSameWeight = (int) $this->params->get('headings_same_weight', 0);
+
+// Debug (optional)
 $debug_font_family  = $fontFamily;
 $debug_font_variant = null;
 
@@ -150,74 +153,101 @@ switch ($fontFamily) {
     // ------------------------------------------
     // 1) ARIAL
     // ------------------------------------------
-    case 'Arial':
-        $debug_font_variant = '';
-        $font_css = "
-            body {
-                font-family: Arial, Helvetica, sans-serif;
-            }
-        ";
-        break;
+case 'Arial':
+
+    $bodyFontFamily = "Arial, Helvetica, sans-serif";
+
+    $bodyWeight   = 400;
+    $strongWeight = 700;
+
+    // Überschriften-Weiche
+    $headingWeight = $headingsSameWeight ? $bodyWeight : $strongWeight;
+
+    $font_css = "
+        body {
+            font-family: {$bodyFontFamily};
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: {$bodyFontFamily};
+            font-weight: {$headingWeight};
+        }
+    ";
+    break;
 
 
     // ------------------------------------------
     // 2) TIMES
     // ------------------------------------------
-    case 'Times':
-        $debug_font_variant = '';
-        $font_css = "
-            body {
-                font-family: 'Times New Roman', Times, serif;
-            }
-        ";
-        break;
+case 'Times':
+
+    $bodyFontFamily = "'Times New Roman', Times, serif";
+
+    $bodyWeight   = 400;
+    $strongWeight = 700;
+
+    // Überschriften-Weiche
+    $headingWeight = $headingsSameWeight ? $bodyWeight : $strongWeight;
+
+    $font_css = "
+        body {
+            font-family: {$bodyFontFamily};
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: {$bodyFontFamily};
+            font-weight: {$headingWeight};
+        }
+    ";
+    break;
 
 
     // ------------------------------------------
-    // 3) ROBOTO (Gewichte nutzen)
-// ------------------------------------------
+    // 3) ROBOTO
+    // ------------------------------------------
     case 'Roboto':
         $debug_font_variant = $fontVariantRoboto;
 
         $bodyFontFamily = "'Roboto'{$fontFallbackSans}";
 
-        // Default-Werte (für Sicherheit)
-        $bodyWeight      = 400;
-        $strongWeight    = 500;
-        $boldItalicWeight= 700;
+        $bodyWeight       = 400;
+        $strongWeight     = 500;
+        $boldItalicWeight = 700;
 
         switch ($fontVariantRoboto) {
-            case 'Thin':    // 100
+            case 'Thin':
                 $bodyWeight       = 100;
-                $strongWeight     = 300; // Light
-                $boldItalicWeight = 400; // Regular
+                $strongWeight     = 300;
+                $boldItalicWeight = 400;
                 break;
 
-            case 'Light':   // 300
+            case 'Light':
                 $bodyWeight       = 300;
-                $strongWeight     = 400; // Regular
-                $boldItalicWeight = 500; // Medium
+                $strongWeight     = 400;
+                $boldItalicWeight = 500;
                 break;
 
-            case 'Regular': // 400
-                $bodyWeight       = 400;
-                $strongWeight     = 500; // Medium
-                $boldItalicWeight = 700; // Bold
-                break;
-
-            case 'Medium':  // 500
+            case 'Medium':
                 $bodyWeight       = 500;
-                $strongWeight     = 700; // Bold
-                $boldItalicWeight = 900; // Black
-                break;
-
-            case 'Bold':    // 700
-            default:
-                $bodyWeight       = 700;
-                $strongWeight     = 900; // Black
+                $strongWeight     = 700;
                 $boldItalicWeight = 900;
                 break;
+
+            case 'Bold':
+                $bodyWeight       = 700;
+                $strongWeight     = 900;
+                $boldItalicWeight = 900;
+                break;
+
+            case 'Regular':
+            default:
+                $bodyWeight       = 400;
+                $strongWeight     = 500;
+                $boldItalicWeight = 700;
+                break;
         }
+
+        $headingWeight = $headingsSameWeight ? $bodyWeight : $strongWeight;
 
         $font_css = "
             body {
@@ -225,7 +255,12 @@ switch ($fontFamily) {
                 font-weight: {$bodyWeight};
             }
 
-            strong, b, h1, h2, h3, h4, h5, h6 {
+            h1, h2, h3, h4, h5, h6 {
+                font-family: {$bodyFontFamily};
+                font-weight: {$headingWeight};
+            }
+
+            strong, b {
                 font-family: {$bodyFontFamily};
                 font-weight: {$strongWeight};
             }
@@ -258,30 +293,26 @@ switch ($fontFamily) {
 
         $bodyFontFamily = "'Roboto-Condensed'{$fontFallbackSans}";
 
-        // Roboto Condensed: Light (300), Regular (400), Bold (700)
         $bodyWeight       = 400;
         $strongWeight     = 700;
         $boldItalicWeight = 700;
 
-        switch ($fontVariantRobotoCondensed) {
-            case 'Light':   // 300
-                $bodyWeight       = 300;
-                $strongWeight     = 400;
-                $boldItalicWeight = 700;
-                break;
-
-            case 'Regular':
-            default:
-                $bodyWeight       = 400;
-                $strongWeight     = 700;
-                $boldItalicWeight = 700;
-                break;
+        if ($fontVariantRobotoCondensed === 'Light') {
+            $bodyWeight   = 300;
+            $strongWeight = 400;
         }
+
+        $headingWeight = $headingsSameWeight ? $bodyWeight : $strongWeight;
 
         $font_css = "
             body {
                 font-family: {$bodyFontFamily};
                 font-weight: {$bodyWeight};
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                font-family: {$bodyFontFamily};
+                font-weight: {$headingWeight};
             }
 
             strong, b {
@@ -317,19 +348,18 @@ switch ($fontFamily) {
 
         $bodyFontFamily = "'Roboto-Slab'{$fontFallbackSans}";
 
-        // Roboto Slab: Thin (100), Light (300), Regular (400), Bold (700)
         $bodyWeight       = 400;
         $strongWeight     = 700;
         $boldItalicWeight = 700;
 
         switch ($fontVariantRobotoSlab) {
-            case 'Thin':    // 100
+            case 'Thin':
                 $bodyWeight       = 100;
                 $strongWeight     = 300;
                 $boldItalicWeight = 400;
                 break;
 
-            case 'Light':   // 300
+            case 'Light':
                 $bodyWeight       = 300;
                 $strongWeight     = 400;
                 $boldItalicWeight = 700;
@@ -343,10 +373,17 @@ switch ($fontFamily) {
                 break;
         }
 
+        $headingWeight = $headingsSameWeight ? $bodyWeight : $strongWeight;
+
         $font_css = "
             body {
                 font-family: {$bodyFontFamily};
                 font-weight: {$bodyWeight};
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                font-family: {$bodyFontFamily};
+                font-weight: {$headingWeight};
             }
 
             strong, b {
@@ -375,9 +412,10 @@ switch ($fontFamily) {
 
 
     // ------------------------------------------
-    // 6) FALLBACK (sollte selten vorkommen)
-// ------------------------------------------
+    // FALLBACK
+    // ------------------------------------------
     default:
         $font_css = '';
         break;
 }
+

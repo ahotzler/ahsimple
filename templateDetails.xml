@@ -7,7 +7,7 @@
 	<authorEmail>ahsimpletemplate@nspw.andrehotzler.de</authorEmail>
 	<authorUrl>http://www.andrehotzler.de</authorUrl>
 	<copyright>Copyright Andre Hotzler</copyright>
-	<version>4.02</version>
+	<version>4.05</version>
 	<description>ahsimple Template</description>
 	<updateservers>
 		<server type="extension" priority="2" name="TPL_AHSIMPLE_XML_UPDATE_NAME">https://downloads.andrehotzler.de/.ahsimple/ahsimple.xml</server>
@@ -92,6 +92,10 @@
 					<option value="Thin">TPL_AHSIMPLE_FONT_VARIANT_ROBOTO_SLAB_THIN</option>
 					<option value="Light">TPL_AHSIMPLE_FONT_VARIANT_ROBOTO_SLAB_LIGHT</option>
 					<option value="Regular">TPL_AHSIMPLE_FONT_VARIANT_ROBOTO_SLAB_REGULAR</option>
+				</field>
+				<field name="headings_same_weight" type="radio" label="TPL_AHSIMPLE_HEADINGS_SAME_WEIGHT_LABEL" layout="joomla.form.field.radio.switcher" description="TPL_AHSIMPLE_HEADINGS_SAME_WEIGHT_DESC" default="1">
+    				<option value="0">JNO</option>
+    				<option value="1">JYES</option>
 				</field>
 				<field name="textcolor" type="color" default="#625f5f" label="TPL_AHSIMPLE_CONFIG_LABEL_TEXTCOLOR" />
 				<field name="contrastcolor" type="color" default="#415a7d" label="TPL_AHSIMPLE_CONFIG_LABEL_CONTRASTCOLOR" />
