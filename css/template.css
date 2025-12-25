@@ -11484,6 +11484,7 @@ img.headerimage {
 
 .category-desc {
   margin-bottom: 2em;
+  margin-top: 1em;
 }
 .category-desc img {
   width: 100%;
@@ -11726,6 +11727,12 @@ ol.breadcrumb {
   color: inherit;
 }
 
+.content .com-content-category .com-content-category__table {
+  margin-top: 1em;
+}
+.content .com-content-category .com-content-category__table th {
+  font-weight: inherit;
+}
 .content {
   margin-bottom: 2em;
   overflow-wrap: break-word;
@@ -11846,6 +11853,23 @@ div.mod-languages ul li.lang-active a img, div.mod-languages ul li a:hover img {
   line-height: 31px;
   height: 31px;
   font-size: 22px;
+}
+
+.accordion-button {
+  font-size: inherit;
+}
+
+.accordion-header {
+  margin-top: 0px;
+}
+
+.accordion-button:not(.collapsed), .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
 }
 
 .printonly {

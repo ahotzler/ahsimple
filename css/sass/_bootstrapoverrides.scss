@@ -21,3 +21,16 @@
 
 
 }
+.accordion-button {
+        font-size: inherit;
+    }
+.accordion-header {
+    margin-top: 0px;
+}
+.accordion-button:not(.collapsed), .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}

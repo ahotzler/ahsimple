@@ -87,6 +87,7 @@ img.headerimage {
 }
 .category-desc {
     margin-bottom: 2em;
+    margin-top: 1em;
     img {
       width: 100%;
       display: block;
@@ -308,6 +309,13 @@ ol.breadcrumb {
   color: inherit;
 }
 .content {
+  .com-content-category
+  .com-content-category__table {
+    margin-top: 1em;
+    th {
+      font-weight: inherit;
+    }
+  }
   margin-bottom: 2em; 
   overflow-wrap: break-word;
   table {
