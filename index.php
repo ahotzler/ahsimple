@@ -2,7 +2,7 @@
 defined('_JEXEC') or die('Restricted access'); 
 /**
 * ahsimple Joomla! Template
-* @copyright   (C) 2022 Andre Hotzler https://www.andrehotzler.de/
+* @copyright   (C) Andre Hotzler https://www.andrehotzler.de/
 * @license     GNU General Public License version 2 or later; see LICENSE.txt
 **/
 
@@ -149,13 +149,9 @@ include('parameters.php');
 		<?php if (isset($differentcontentlinkcolorcode)) { echo $differentcontentlinkcolorcode; } ?>	
 		<?php if (isset($hyperlinkiconcode)) { echo $hyperlinkiconcode; } ?>	
 		<?php echo $customcsscode ?>
-
 		<?php if (!empty($font_css)) : ?>
 				<?php echo $font_css; ?>
 		<?php endif; ?>
-
-
-
 	</style>
 </head>
 <body class="site <?php echo $option . ' ' . ' view-' . $view . ($layout ? ' layout-' . $layout : ' no-layout') . ($task ? ' task-' . $task : ' no-task') . ($itemid ? ' itemid-' . $itemid : '') . ($pageclass ? ' ' . $pageclass : '') . ($this->direction == 'rtl' ? ' rtl' : ''); ?>">

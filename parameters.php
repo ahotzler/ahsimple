@@ -98,7 +98,7 @@ if ($hyperlinkicon == '1') {
     .item-content :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a::before, .item-page :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a::before {
         font-family: "Font Awesome 6 Free";
         content: "'.$hyperlinkiconchar.'";
-        margin-right: .35em;
+        padding-inline-end: .35em;
         font-size: 0.9em;
     }
     .item-content :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a[href^="tel"]::before, .item-page :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a[href^="tel"]::before  {
