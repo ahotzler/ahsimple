@@ -152,13 +152,16 @@ include('parameters.php');
 		<?php if (!empty($font_css)) : ?>
 				<?php echo $font_css; ?>
 		<?php endif; ?>
+		<?php if (!empty($mainareashadowcode)) : ?>
+			<?php echo $mainareashadowcode; ?>
+		<?php endif; ?>
 	</style>
 </head>
 <body class="site <?php echo $option . ' ' . ' view-' . $view . ($layout ? ' layout-' . $layout : ' no-layout') . ($task ? ' task-' . $task : ' no-task') . ($itemid ? ' itemid-' . $itemid : '') . ($pageclass ? ' ' . $pageclass : '') . ($this->direction == 'rtl' ? ' rtl' : ''); ?>">
 <div id="atthetop">
 	<jdoc:include type="modules" name="atthetop" style="html5" />		
 </div>
-<div id="maincontainer" class="container shadow-sm  mb-0 mt-0 mb-sm-2 mt-sm-2 mb-md-3 mt-md-3 mb-lg-4 mt-lg-4">
+<div id="maincontainer" class="container mb-0 mt-0 mb-sm-2 mt-sm-2 mb-md-3 mt-md-3 mb-lg-4 mt-lg-4">
 	<header>
   	<div class="header mb-4">
 			<jdoc:include type="modules" name="header" style="raw" />			

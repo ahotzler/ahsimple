@@ -11411,9 +11411,6 @@ img.headerimage {
   clear: both;
 }
 
-#maincontainer {
-  box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, 0.2);
-}
 #maincontainer ul.mod-menu {
   margin: 20px 0px 10px 0px;
   padding: 10px 0px;

@@ -80,6 +80,14 @@ if ($alignedintroimagefullwidth == '1') {
 			width: 100%;	
 			}';
 }
+$mainareashadow = ($this->params->get('mainareashadow', '0'));	
+$mainareaboxshadow = ($this->params->get('mainareaboxshadow', '2px 2px 8px 3px rgba(0, 0, 0, .2);'));	
+if ($mainareashadow == '1') {
+	$mainareashadowcode = '#maincontainer {
+                            box-shadow:'.$mainareaboxshadow.'
+                            }';
+}
+
 $alignedcontimagefullwidth = ($this->params->get('alignedcontimagefullwidth', '0'));	
 if ($alignedcontimagefullwidth == '1') {
 	$alignedcontimagefullwidthcode = '.item-page img.left, .blog-item img.left, .item-page img.right, .blog-item img.right {

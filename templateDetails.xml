@@ -2,12 +2,12 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 3.1//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="5.0" type="template" client="site">
 	<name>ahsimple</name>
-	<creationDate>24.01.2026</creationDate>
+	<creationDate>24.02.2026</creationDate>
 	<author>Andre Hotzler</author>
 	<authorEmail>ahsimpletemplate@nspw.andrehotzler.de</authorEmail>
 	<authorUrl>http://www.andrehotzler.de</authorUrl>
 	<copyright>Copyright Andre Hotzler</copyright>
-	<version>4.09</version>
+	<version>4.10</version>
 	<description>ahsimple Template</description>
 	<updateservers>
 		<server type="extension" priority="2" name="TPL_AHSIMPLE_XML_UPDATE_NAME">https://downloads.andrehotzler.de/.ahsimple/ahsimple.xml</server>
@@ -67,6 +67,12 @@
 				</field>		
 				<field name="sitebackgroundcolor" type="color" default="#eeeeee" label="TPL_AHSIMPLE_CONFIG_LABEL_BACKGROUNDCOLORLONGTEXT" showon="sitebackgroundtype:color" />
 				<field name="sitebackgroundimage" type="media" default="./images/headers/blue-flower.jpg" label="TPL_AHSIMPLE_CONFIG_LABEL_BACKGROUNDIMAGE" showon="sitebackgroundtype:image" />
+				<field name="mainareashadow" type="radio" label="TPL_AHSIMPLE_CONFIG_LABEL_MAINAREASHADOW" layout="joomla.form.field.radio.switcher" default="0" filter="boolean">	
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="mainareashadow_note" type="note" description="TPL_AHSIMPLE_CONFIG_MAINAREASHADOW_NOTE" class="alert alert-info" showon="mainareashadow:1" />
+				<field name="mainareaboxshadow" type="text" default="2px 2px 8px 3px rgba(0, 0, 0, .2);" label="TPL_AHSIMPLE_CONFIG_LABEL_MAINAREABOXSHADOW" description="TPL_AHSIMPLE_CONFIG_DESC_MAINAREABOXSHADOW" showon="mainareashadow:1" />
 				<field name="font_family" label="TPL_AHSIMPLE_FONT_FAMILY_LABEL" description="TPL_AHSIMPLE_FONT_FAMILY_DESC" type="list" default="Roboto">
 					<option value="Roboto">TPL_AHSIMPLE_FONT_FAMILY_ROBOTO</option>
 					<option value="Roboto-Condensed">TPL_AHSIMPLE_FONT_FAMILY_ROBOTO_CONDENSED</option>
