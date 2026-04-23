@@ -2,11 +2,10 @@
 defined('_JEXEC') or die('Restricted access'); 
 /**
 * ahsimple Joomla! Template
-* @copyright   (C) 2021 Andre Hotzler https://www.andrehotzler.de/
+* @copyright   (C) 2026 Andre Hotzler https://www.andrehotzler.de/ with the help of AI
 * @license     GNU General Public License version 2 or later; see LICENSE.txt
 **/
 use Joomla\CMS\Uri\Uri;
-// Logo file or site title param
 
 $headerownext = ($this->params->get('headerownext', 'My Own Site'));
 $contrastcolor = ($this->params->get('contrastcolor', '#b85353'));
@@ -29,7 +28,6 @@ $templatewidth = ($this->params->get('templatewidth', '900px'));
 $headertype = ($this->params->get('headertype', 'sitename'));
 $linkedheader = ($this->params->get('linkedheader', 'no'));
 $headeralignment = ($this->params->get('headeralignment', 'sitename'));
-
 
 if ($headertype == 'headerimage') {
 	if ($linkedheader == 'yes') {
@@ -59,7 +57,7 @@ $sitebackgroundimage = ($this->params->get('sitebackgroundimage', 'sitename'));
 $innerbackgroundopacity = ($this->params->get('innerbackgroundopacity', '1'));	
 $menubackgroundopacity = $innerbackgroundopacity - 0.3; 
 if ($sitebackgroundtype == 'image') {
-	$sitebodybackgroundcsscode = 'background-color: transparent;';
+	$sitebodybackgroundcsscode = 'background-color: transparent';
 	$sitebodybackgroundaftercsscode = 'content: url("'. Uri::root(true) . '/' . htmlspecialchars($this->params->get('sitebackgroundimage'), ENT_QUOTES) .'");';
 	$sitehtmlbackgroundcsscode = 'background: url("' . Uri::root(true) . '/' . htmlspecialchars($this->params->get('sitebackgroundimage'), ENT_QUOTES) . '") no-repeat top center fixed; background-size: cover;';
 	 } elseif ($sitebackgroundtype ==  'color') {
@@ -426,4 +424,3 @@ case 'Times':
         $font_css = '';
         break;
 }
-

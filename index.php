@@ -63,20 +63,20 @@ include('parameters.php');
 	<jdoc:include type="scripts" />
 	<style>
 		.navbar-collapse  {
-			--bs-bg-opacity: <?php echo $menubackgroundopacity ?>;;
+			--bs-bg-opacity: <?php echo $menubackgroundopacity ?>;
 		}
 		hr, h1, h2, h3, h4, h5, h6, a, a:hover, a#displayText, a#displayText:hover, #mobilemenucontainer ul li.active a, #mobilemenucontainer ul li a{
 			color: 	<?php echo $contrastcolor ?>;
 		}
 		.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-			color: <?php echo $contrastcolor ?> 
+			color: <?php echo $contrastcolor ?>;
 		}
 		hr {
 			border-top: 2px solid <?php echo $contrastcolor ?>;
 			opacity: 1;
 		}
 		.navbar-light .navbar-toggler {
-			color: <?php echo $contrastcolor ?> 
+			color: <?php echo $contrastcolor ?>;
 		}
 		.w1 {
 			width: <?php echo $templatewidth ?>;
@@ -85,10 +85,10 @@ include('parameters.php');
 			border-color: 	<?php echo $contrastcolor ?>;
 		}
 		#maincontainer ul.mod-menu li a {
-			color: <?php echo $textcolor ?> 
+			color: <?php echo $textcolor ?> ;
 		}
 		#maincontainer ul.mod-menu li.active a {
-			color: <?php echo $contrastcolor ?> 
+			color: <?php echo $contrastcolor ?>;
 		}
 		body {
 			font-size: <?php echo $fontsize ?>;
@@ -97,11 +97,10 @@ include('parameters.php');
 		}
 		body:after {
 			display: none;
-			<?php echo $sitebodybackgroundaftercsscode ?>;
+			<?php echo $sitebodybackgroundaftercsscode ?? ''; ?>
 		}
-
 		html {
-			<?php echo $sitehtmlbackgroundcsscode ?>;
+			<?php echo $sitehtmlbackgroundcsscode ?? ''; ?>
 		}
 		h1 {
 			font-size: <?php echo $h1size ?>;
@@ -118,7 +117,7 @@ include('parameters.php');
 		#maincontainer {
 			background: <?php echo $innerbackgroundcolor ?>;
 			max-width: <?php echo $templatewidth ?>;
-			border-radius: <?php echo $innerbackgroundroundedborders  ?>;
+			border-radius: <?php echo $innerbackgroundroundedborders ?>;
 			padding: <?php echo $innerpaddingmobile ?> 
 		}
 		@media (min-width: 992px) {
@@ -130,8 +129,8 @@ include('parameters.php');
 			background-color: <?php echo $innerbackgroundcolor ?>;
 			opacity: <?php echo $innerbackgroundopacity ?>;
 			max-width: <?php echo $templatewidth ?>;
-			border-bottom-left-radius: <?php echo $innerbackgroundroundedborders  ?>;
-			border-bottom-right-radius: <?php echo $innerbackgroundroundedborders  ?>;
+			border-bottom-left-radius: <?php echo $innerbackgroundroundedborders ?>;
+			border-bottom-right-radius: <?php echo $innerbackgroundroundedborders ?>;
 		}
 		.item-page img.left, .blog-item img.left, .item-page img.right, .blog-item img.right  {
 			width: <?php echo $alignedcontentimagewidth ?>;
@@ -143,18 +142,14 @@ include('parameters.php');
     	#maincontainer {
         	border-radius: 0px !important;
     	}
-    	<?php if (isset($alignedintroimagefullwidthcode)) { echo $alignedintroimagefullwidthcode; } ?>
-     	<?php if (isset($alignedcontimagefullwidthcode)) { echo $alignedcontimagefullwidthcode; } ?>	
+			<?php echo $alignedintroimagefullwidthcode ?? ''; ?>
+        	<?php echo $alignedcontimagefullwidthcode ?? ''; ?>
 		}
-		<?php if (isset($differentcontentlinkcolorcode)) { echo $differentcontentlinkcolorcode; } ?>	
-		<?php if (isset($hyperlinkiconcode)) { echo $hyperlinkiconcode; } ?>	
-		<?php echo $customcsscode ?>
-		<?php if (!empty($font_css)) : ?>
-				<?php echo $font_css; ?>
-		<?php endif; ?>
-		<?php if (!empty($mainareashadowcode)) : ?>
-			<?php echo $mainareashadowcode; ?>
-		<?php endif; ?>
+		<?php echo $differentcontentlinkcolorcode ?? ''; ?>
+		<?php echo $hyperlinkiconcode ?? ''; ?>
+		<?php echo $customcsscode ?? ''; ?>
+		<?php echo $font_css ?? ''; ?>
+		<?php echo $mainareashadowcode ?? ''; ?>
 	</style>
 </head>
 <body class="site <?php echo $option . ' ' . ' view-' . $view . ($layout ? ' layout-' . $layout : ' no-layout') . ($task ? ' task-' . $task : ' no-task') . ($itemid ? ' itemid-' . $itemid : '') . ($pageclass ? ' ' . $pageclass : '') . ($this->direction == 'rtl' ? ' rtl' : ''); ?>">
@@ -194,6 +189,6 @@ include('parameters.php');
 		</div>
 	</footer>
 </div>
-<?php echo $customcodeattheend ?>
+<?php echo $customcodeattheend ?? ''; ?>
 </body> 
 </html>
