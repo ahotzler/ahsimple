@@ -101,7 +101,7 @@ if ($hyperlinkicon == '1') {
 	$hyperlinkteliconchar = ($this->params->get('hyperlinkteliconchar', '\F879'));	
     $hyperlinkemailiconchar = ($this->params->get('hyperlinkemailiconchar', '\F0E0'));	
 	$hyperlinkiconcode = '
-    .item-content :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a::before, .item-page :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a::before {
+    .item-content :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a:not(.readmorelink)::before, .item-page :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) > a:not(.readmorelink)::before {
         font-family: "Font Awesome 6 Free";
         content: "'.$hyperlinkiconchar.'";
         padding-inline-end: .35em;
