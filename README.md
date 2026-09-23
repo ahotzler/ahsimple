@@ -24,19 +24,19 @@ Furthermore, the template does not load any external resources such as third-par
 ## example screenshots
 ### frontend 
 Taken from live Example Dentist (see below)
-![Example image of how a website created with the ahsimple template might look](https://www.sofort-start-webseite.de/images/ahsimple-template-lawyer-example.jpg)
+![Example image of how a website created with the ahsimple template might look](https://www.einfachfertigweb.de/images/ahsimple-template-lawyer-example.jpg)
 ### template configuration in backend 
 The screenshot below shows a part of the available configuration options. Please note that this is only a small excerpt - many more settings are available to fine-tune layout, design, and functionality directly within the Joomla! administrator interface.
-![Example of template configuration](https://www.sofort-start-webseite.de/images/ahsimple-template-settings-english.jpg)
+![Example of template configuration](https://www.einfachfertigweb.de/images/ahsimple-template-settings-english.jpg)
 ### module positions 
-![Example image of template module positions](https://www.sofort-start-webseite.de/images/ahsimple-template-module-positions.jpg)
+![Example image of template module positions](https://www.einfachfertigweb.de/images/ahsimple-template-module-positions.jpg)
 ## live examples
 
-[Live Example 1 Dentist, german language](https://www.sofort-start-webseite.de/beispiel-zahnarzt/zahnaerzte-mueller-schneider-muenchen-trudering.html)\
-[Live Example 2 Lawyer, german language](https://www.sofort-start-webseite.de/beispiel-anwalt/home.html)\
+[Live Example 1 Dentist, german language](https://www.einfachfertigweb.de/beispiel-zahnarzt/zahnaerzte-mueller-schneider-muenchen-trudering.html)\
+[Live Example 2 Lawyer, german language](https://www.einfachfertigweb.de/beispiel-anwalt/home.html)\
 [Live Example 3 my website, multilanguage](https://www.andrehotzler.de/en/)
 
-The template is also available as a service including installation and setup [here](https://www.sofort-start-webseite.de/)
+The template is also available as a service including installation and setup [here](https://www.einfachfertigweb.de/)
 
 A shot installation video in german language can be found here: https://www.andrehotzler.de/en/projects/ahsimple-the-simple-joomla-template.html
 
