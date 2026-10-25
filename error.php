@@ -198,6 +198,7 @@ $errorCode = $this->error->getCode();
 					<?php endif; ?>
 				</div>
 			<?php endif; ?>
+			<jdoc:include type="modules" name="error-global" style="html5" />
 			<div class="clearfix"></div>
 		</div>
 	</main>
