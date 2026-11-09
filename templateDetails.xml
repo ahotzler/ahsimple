@@ -7,7 +7,7 @@
 	<authorEmail>ahsimpletemplate@nspw.andrehotzler.de</authorEmail>
 	<authorUrl>http://www.andrehotzler.de</authorUrl>
 	<copyright>Copyright Andre Hotzler</copyright>
-	<version>4.18</version>
+	<version>4.20</version>
 	<description>ahsimple Template</description>
 	<updateservers>
 		<server type="extension" priority="2" name="TPL_AHSIMPLE_XML_UPDATE_NAME">https://downloads.andrehotzler.de/.ahsimple/ahsimple.xml</server>
@@ -137,7 +137,7 @@
 					<option value="25px">25px</option>
 					<option value="30px">30px</option>
 				</field>
-				<field name="innerbackgroundopacity" type="list" default="0.95" label="TPL_AHSIMPLE_CONFIG_LABEL_BGOPACITY" showon="sitebackgroundtype:image">
+				<field name="innerbackgroundopacity" type="list" default="0.95" label="TPL_AHSIMPLE_CONFIG_LABEL_BGOPACITY">
 					<option value="1">1</option>
 					<option value="0.95">0.95</option>
 					<option value="0.9">0.9</option>
