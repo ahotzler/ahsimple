@@ -63,7 +63,14 @@ if ($sitebackgroundtype == 'image') {
 	 } elseif ($sitebackgroundtype ==  'color') {
 	$sitebodybackgroundcsscode = 'background-color:'.$sitebackgroundcolor.';';
 	$innerbackgroundopacity = "1";
-	} 	
+	} elseif ($sitebackgroundtype == 'video') {
+    $sitebodybackgroundcsscode = '#site-background-video  {position: fixed;  top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center center; z-index: -1; pointer-events: none; } ';
+    $sitebackgroundvideopath = Uri::root(true) . '/' . ltrim($this->params->get('sitebackgroundvideo'), '/');
+    $sitebackgroundvideocode = '<video id="site-background-video" autoplay muted loop playsinline preload="auto" aria-hidden="true" tabindex="-1">
+        <source src="' . htmlspecialchars($sitebackgroundvideopath, ENT_QUOTES, 'UTF-8') . '" type="video/mp4">
+    </video>';
+    }
+
 $innerbackgroundroundedborders = ($this->params->get('innerbackgroundroundedborders', '5px'));	
 $customcsscode = ($this->params->get('customcsscode', ''));	
 $customcodeattheend = ($this->params->get('customcodeattheend', ''));	

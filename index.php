@@ -148,6 +148,9 @@ include('parameters.php');
 	</style>
 </head>
 <body class="site <?php echo $option . ' ' . ' view-' . $view . ($layout ? ' layout-' . $layout : ' no-layout') . ($task ? ' task-' . $task : ' no-task') . ($itemid ? ' itemid-' . $itemid : '') . ($pageclass ? ' ' . $pageclass : '') . ($this->direction == 'rtl' ? ' rtl' : ''); ?>">
+	<?php
+echo $sitebackgroundvideocode ?? '';
+?>
 <div id="atthetop">
 	<jdoc:include type="modules" name="atthetop" style="html5" />
 </div>
